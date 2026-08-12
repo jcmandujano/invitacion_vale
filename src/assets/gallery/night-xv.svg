@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title description">
+  <title id="title">Fotografía pendiente de una noche mágica</title>
+  <desc id="description">Marcador decorativo temporal para una fotografía horizontal.</desc>
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1A1430"/><stop offset="1" stop-color="#0B0B0F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#night)"/>
+  <rect x="38" y="38" width="1124" height="824" fill="none" stroke="#C8A66B" stroke-width="3"/>
+  <path d="M150 170h260M790 730h260" stroke="#C8A66B" stroke-width="2" opacity=".62"/>
+  <path d="M280 115l10 28 29 2-23 18 8 29-24-16-24 16 8-29-23-18 29-2 10-28Z" fill="#E6C98A"/>
+  <circle cx="850" cy="190" r="7" fill="#B79ADB"/><circle cx="1000" cy="320" r="5" fill="#E6C98A"/><circle cx="190" cy="680" r="6" fill="#B79ADB"/>
+  <text x="600" y="480" fill="#E6C98A" font-family="Georgia, serif" font-size="190" text-anchor="middle">XV</text>
+  <text x="600" y="565" fill="#D8D2E6" font-family="Georgia, serif" font-size="30" letter-spacing="10" text-anchor="middle">UNA NOCHE MÁGICA</text>
+</svg>

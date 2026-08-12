@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none">
+
+<style>
+.stroke { stroke:#C8A66B; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+.stroke2 { stroke:#E6C98A; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+.fill-gold { fill:#C8A66B; }
+.fill-purple { fill:#4B2E83; }
+.fill-dark { fill:#0B0B0F; }
+.text { fill:#E6C98A; font-family: Georgia, "Times New Roman", serif; }
+</style>
+<circle cx="128" cy="128" r="104" stroke="#C8A66B" stroke-width="4"/>
+<circle cx="128" cy="128" r="72" stroke="#C8A66B" stroke-width="2"/>
+<path d="M128 22l20 90 86 16-86 16-20 90-20-90-86-16 86-16 20-90Z" fill="#C8A66B" opacity=".92"/>
+<path d="M128 54l9 63 61 11-61 11-9 63-9-63-61-11 61-11 9-63Z" fill="#1A1430"/>
+<text x="128" y="18" text-anchor="middle" class="text" font-size="20">N</text>
+<text x="128" y="250" text-anchor="middle" class="text" font-size="20">S</text>
+<text x="245" y="134" text-anchor="middle" class="text" font-size="20">E</text>
+<text x="12" y="134" text-anchor="middle" class="text" font-size="20">O</text>
+
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
+
+<style>
+.stroke { stroke:#C8A66B; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+.stroke2 { stroke:#E6C98A; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+.fill-gold { fill:#C8A66B; }
+.fill-purple { fill:#4B2E83; }
+.fill-dark { fill:#0B0B0F; }
+.text { fill:#E6C98A; font-family: Georgia, "Times New Roman", serif; }
+</style>
+<path d="M10 190V10h180" stroke="#C8A66B" stroke-width="4"/>
+<path d="M30 158V30h128" stroke="#C8A66B" stroke-width="2"/>
+<path d="M10 72c38 0 62-24 62-62M28 98c49 0 70-21 70-70" stroke="#C8A66B" stroke-width="3"/>
+<path d="M55 55c26 0 42 16 42 42" stroke="#B79ADB" stroke-width="4"/>
+<circle cx="50" cy="50" r="6" fill="#E6C98A"/>
+
+</svg>

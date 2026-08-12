@@ -1,0 +1,184 @@
+body.intro-active {
+  position: fixed;
+  inset: 0;
+  height: 100svh;
+  width: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+.js body.intro-active #main-content,
+.js body.intro-active .closing {
+  visibility: hidden;
+}
+
+.intro {
+  display: grid;
+  min-height: 100svh;
+  height: 100svh;
+  place-items: center;
+  padding-block:
+    max(var(--space-lg), env(safe-area-inset-top))
+    max(var(--space-lg), env(safe-area-inset-bottom));
+}
+
+.intro[hidden] {
+  display: none;
+}
+
+.intro.section--night {
+  background: var(--vr-black);
+}
+
+.intro__paper-surface {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background:
+    radial-gradient(circle at 15% 10%, rgb(200 166 107 / 16%), transparent 32%),
+    radial-gradient(circle at 86% 82%, rgb(75 46 131 / 9%), transparent 28%),
+    linear-gradient(105deg, rgb(255 255 255 / 16%), transparent 35%),
+    var(--vr-parchment);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.night-sky {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 47%, rgb(183 154 219 / 24%), transparent 35%),
+    radial-gradient(circle at 50% 110%, rgb(75 46 131 / 34%), transparent 44%),
+    radial-gradient(circle at 78% 18%, rgb(230 201 138 / 8%), transparent 22%);
+}
+
+.night-sky::before {
+  position: absolute;
+  top: 8%;
+  right: 4%;
+  width: min(72vw, 28rem);
+  height: 6rem;
+  background: url("../../assets/ornaments/constellation-line.svg") center / contain no-repeat;
+  content: "";
+  filter: drop-shadow(0 0 0.55rem rgb(183 154 219 / 24%));
+  opacity: 0.22;
+}
+
+.night-sky::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 25%, rgb(255 255 255 / 2%) 50%, transparent 75%);
+  content: "";
+  opacity: 0.5;
+}
+
+.magic-particles {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.magic-particle {
+  position: absolute;
+  top: var(--particle-y);
+  left: var(--particle-x);
+  width: var(--particle-size);
+  height: var(--particle-size);
+  border-radius: 50%;
+  background: var(--particle-color);
+  box-shadow:
+    0 0 0.45rem var(--particle-color),
+    0 0 1rem rgb(183 154 219 / 18%);
+}
+
+.magic-particle--star {
+  border-radius: 0;
+  clip-path: polygon(
+    50% 0,
+    57% 41%,
+    100% 50%,
+    57% 59%,
+    50% 100%,
+    43% 59%,
+    0 50%,
+    43% 41%
+  );
+  filter: drop-shadow(0 0 0.35rem var(--particle-color));
+}
+
+.intro-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--vr-lavender);
+  font-family: var(--font-accent);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+}
+
+.intro__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: min(100%, 34rem);
+  justify-items: center;
+  gap: clamp(0.75rem, 2.5vh, var(--space-md));
+  text-align: center;
+}
+
+[data-intro-state="transitioning"] .intro__inner {
+  pointer-events: none;
+}
+
+.js .intro__inner {
+  visibility: hidden;
+}
+
+.intro-fallback .intro__inner {
+  visibility: visible;
+}
+
+.intro-fallback .intro-loader {
+  display: none;
+}
+
+.intro__message {
+  max-width: 24rem;
+  color: var(--vr-lavender);
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 5vw, 1.35rem);
+  font-style: italic;
+}
+
+.intro__hint {
+  color: var(--vr-gold-light);
+  font-family: var(--font-accent);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 48rem) {
+  .intro {
+    padding-block: var(--space-xl);
+  }
+}
+
+@media (max-height: 43rem) {
+  .intro {
+    padding-block: var(--space-sm);
+  }
+
+  .intro__inner {
+    gap: 0.55rem;
+  }
+
+  .intro__message {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" role="img" aria-labelledby="title description">
+  <title id="title">Momento pendiente del día dieciocho</title>
+  <desc id="description">Marcador decorativo temporal para una fotografía cuadrada.</desc>
+  <rect width="900" height="900" fill="#1A1430"/>
+  <rect x="34" y="34" width="832" height="832" fill="none" stroke="#C8A66B" stroke-width="3"/>
+  <circle cx="450" cy="450" r="260" fill="none" stroke="#4B2E83" stroke-width="45" opacity=".72"/>
+  <circle cx="450" cy="450" r="222" fill="none" stroke="#B79ADB" stroke-width="2"/>
+  <path d="M450 120v90M405 165h90" stroke="#E6C98A" stroke-width="3"/>
+  <text x="450" y="535" fill="#E6C98A" font-family="Georgia, serif" font-size="250" text-anchor="middle">18</text>
+  <text x="450" y="660" fill="#D8D2E6" font-family="Georgia, serif" font-size="28" letter-spacing="8" text-anchor="middle">OCTUBRE</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" fill="none">
+
+<style>
+.stroke { stroke:#C8A66B; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+.stroke2 { stroke:#E6C98A; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+.fill-gold { fill:#C8A66B; }
+.fill-purple { fill:#4B2E83; }
+.fill-dark { fill:#0B0B0F; }
+.text { fill:#E6C98A; font-family: Georgia, "Times New Roman", serif; }
+</style>
+<rect x="18" y="18" width="764" height="964" rx="26" stroke="#C8A66B" stroke-width="6"/>
+<rect x="38" y="38" width="724" height="924" rx="20" stroke="#C8A66B" stroke-width="2" opacity=".75"/>
+<path d="M18 150c75 0 132-57 132-132M632 18c0 75 57 132 150 132M18 850c75 0 132 57 132 132M632 982c0-75 57-132 150-132"
+ stroke="#C8A66B" stroke-width="4"/>
+<g fill="#B79ADB">
+  <circle cx="72" cy="72" r="7"/><circle cx="728" cy="72" r="7"/><circle cx="72" cy="928" r="7"/><circle cx="728" cy="928" r="7"/>
+</g>
+<path d="M400 20l8 20 21 2-16 14 5 20-18-11-18 11 5-20-16-14 21-2 8-20Z" fill="#E6C98A"/>
+<path d="M400 980l8-20 21-2-16-14 5-20-18 11-18-11 5 20-16 14 21 2 8 20Z" fill="#E6C98A"/>
+
+</svg>

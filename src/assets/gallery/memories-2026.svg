@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-labelledby="title description">
+  <title id="title">Recuerdos pendientes de 2026</title>
+  <desc id="description">Marcador decorativo temporal para una fotografía vertical.</desc>
+  <defs>
+    <linearGradient id="memory" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#261B45"/><stop offset="1" stop-color="#0B0B0F"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#memory)"/>
+  <path d="M40 190V40h150M610 960h150V810" fill="none" stroke="#C8A66B" stroke-width="3"/>
+  <path d="M70 160V70h90M640 930h90v-90" fill="none" stroke="#B79ADB" stroke-width="2"/>
+  <path d="M400 180l12 32 34 2-27 21 9 33-28-18-28 18 9-33-27-21 34-2 12-32Z" fill="#E6C98A"/>
+  <text x="400" y="535" fill="#E6C98A" font-family="Georgia, serif" font-size="150" text-anchor="middle">2026</text>
+  <path d="M230 620h340" stroke="#C8A66B" stroke-width="2"/>
+  <text x="400" y="690" fill="#D8D2E6" font-family="Georgia, serif" font-size="27" letter-spacing="7" text-anchor="middle">RECUERDOS POR GUARDAR</text>
+</svg>

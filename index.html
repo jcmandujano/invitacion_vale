@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Invitación digital para celebrar los XV años de Valeria Ramírez."
+    />
+    <meta name="theme-color" content="#0B0B0F" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;family=Cormorant+Garamond:ital,wght@0,500;1,500&amp;family=EB+Garamond:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <title>XV Valeria Ramírez</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content" data-config="interface.skipIntro">Saltar la introducción e ir a la invitación</a>
+
+    <nav
+      class="site-nav"
+      aria-label="Navegación principal"
+      aria-hidden="true"
+      data-site-nav
+      data-nav-state="hidden"
+      inert
+    >
+      <div class="site-nav__backdrop" data-nav-close aria-hidden="true"></div>
+      <div class="site-nav__shell" data-nav-shell>
+        <a class="site-nav__brand" href="#inicio" aria-label="Ir al inicio" data-nav-link>
+          <img
+            src="/src/assets/identity/monogram-horizontal-vr-xv.svg"
+            width="760"
+            height="270"
+            alt=""
+          />
+        </a>
+
+        <button
+          class="site-nav__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-navigation-menu"
+          aria-label="Abrir menú"
+          data-nav-toggle
+        >
+          <span class="site-nav__toggle-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+        <div class="site-nav__menu" id="site-navigation-menu" data-nav-menu inert>
+          <ul>
+            <li><a href="#inicio" data-nav-link data-config="navigation.home">Inicio</a></li>
+            <li><a href="#fecha" data-nav-link data-config="navigation.date">Fecha</a></li>
+            <li><a href="#vestimenta" data-nav-link data-config="navigation.dressCode">Vestimenta</a></li>
+            <li><a href="#mapa" data-nav-link data-config="navigation.map">Mapa</a></li>
+            <li><a href="#galeria" data-nav-link data-config="navigation.gallery">Galería</a></li>
+            <li><a href="#rsvp" data-nav-link data-config="navigation.rsvp">RSVP</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="intro section section--night"
+      id="intro"
+      data-intro
+      data-intro-state="loading"
+      aria-labelledby="intro-heading"
+    >
+      <div class="night-sky" data-intro-atmosphere aria-hidden="true"></div>
+      <div class="magic-particles" data-particles aria-hidden="true"></div>
+      <div class="intro__paper-surface" data-paper-surface aria-hidden="true"></div>
+
+      <p class="intro-loader" data-intro-loader data-config="intro.loader" role="status">Preparando la magia…</p>
+
+      <div class="intro__inner" data-intro-content>
+        <p class="eyebrow" data-intro-copy data-config="intro.eyebrow">Una invitación especial</p>
+        <h2 class="sr-only" id="intro-heading" data-config="intro.heading">La invitación ha llegado</h2>
+
+        <div class="envelope-scene">
+          <div class="envelope" data-envelope aria-label="Sobre mágico dirigido a Valeria Ramírez">
+            <div class="envelope__back" aria-hidden="true"></div>
+
+            <div class="envelope__letter" data-letter aria-hidden="true">
+              <div class="envelope__letter-content" data-letter-content>
+                <img
+                  src="/src/assets/identity/monogram-circle-vr-xv.svg"
+                  width="512"
+                  height="512"
+                  alt=""
+                  fetchpriority="high"
+                  data-intro-critical
+                />
+                <span data-config="event.title">Mis XV años</span>
+                <strong data-config="quinceanera.firstName">Valeria</strong>
+                <small data-config="intro.letterTagline">Una nueva historia está por comenzar</small>
+              </div>
+            </div>
+
+            <div class="envelope__front" aria-hidden="true"></div>
+            <div class="envelope__flap" data-flap aria-hidden="true"></div>
+
+            <p class="envelope__recipient" data-recipient>
+              <span data-config="intro.recipientPrefix">Srta.</span>
+              <span data-config="quinceanera.name">Valeria Ramírez</span>
+            </p>
+
+            <button
+              class="envelope__seal"
+              type="button"
+              data-seal
+              aria-describedby="intro-hint"
+              disabled
+            >
+              <img
+                src="/src/assets/identity/wax-seal-vr.webp"
+                width="194"
+                height="194"
+                alt="Sello de lacre VR, XV"
+                fetchpriority="high"
+                data-intro-critical
+              />
+              </button>
+            <span class="envelope__seal-magic" data-seal-magic aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <p class="intro__message" data-intro-copy data-config="intro.message">Una nueva historia está por comenzar.</p>
+        <p class="intro__hint" id="intro-hint" data-intro-hint data-intro-copy data-config="intro.hintReady" aria-live="polite">
+          Toca el sello para abrir
+        </p>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section class="welcome section section--parchment" id="inicio" aria-labelledby="welcome-title">
+        <div class="section__inner welcome__layout">
+          <div class="welcome__identity">
+            <p class="eyebrow eyebrow--ink" data-config="welcome.eyebrow">Celebramos sus XV años</p>
+            <img
+              class="welcome__monogram"
+              src="/src/assets/identity/monogram-shield-vr-xv.svg"
+              width="512"
+              height="512"
+              alt="Emblema VR, XV"
+            />
+            <h1 id="welcome-title" data-config="quinceanera.name">Valeria Ramírez</h1>
+            <p class="welcome__xv" data-config="quinceanera.celebration">XV</p>
+            <p class="welcome__tagline" data-config="welcome.tagline">Una nueva historia está por comenzar.</p>
+            <img
+              class="welcome__separator"
+              src="/src/assets/ornaments/separator-star.svg"
+              width="512"
+              height="96"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+
+          <figure class="portrait-placeholder">
+            <div class="portrait-placeholder__frame" role="img" aria-label="Fotografía de Valeria pendiente">
+              <span data-config="quinceanera.initials">VR</span>
+              <small data-config="welcome.portraitStatus">Retrato pendiente</small>
+            </div>
+            <figcaption data-config="welcome.portraitCaption">Una noche para recordar</figcaption>
+          </figure>
+
+          <div class="welcome__story">
+            <img
+              class="section-icon"
+              src="/src/assets/ornaments/separator-star.svg"
+              width="512"
+              height="96"
+              alt=""
+              aria-hidden="true"
+            />
+            <p class="eyebrow eyebrow--ink" data-config="welcome.storyEyebrow">Sobre mí</p>
+            <h2 data-config="welcome.storyTitle">El comienzo de una nueva historia</h2>
+            <p data-config="welcome.storyBody">
+              Valeria está por comenzar una nueva etapa llena de sueños, magia y momentos
+              inolvidables. Acompáñanos a celebrar una noche muy especial en honor a sus XV años.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="event-date section section--night" id="fecha" aria-labelledby="date-title">
+        <div class="section__inner event-date__layout">
+          <div class="event-date__heading">
+            <img
+              class="section-icon"
+              src="/src/assets/icons/date.svg"
+              width="128"
+              height="128"
+              alt=""
+              aria-hidden="true"
+            />
+            <p class="eyebrow" data-config="dateCopy.eyebrow">La celebración</p>
+            <h2 class="sr-only" id="date-title" data-config="dateCopy.accessibleTitle">Fecha y hora de la celebración</h2>
+            <time class="date-display" datetime="2026-10-18T19:00:00-06:00" data-event-datetime>
+              <span class="date-display__day" data-config="event.dateParts.day">18</span>
+              <span class="date-display__month" data-config="event.dateParts.month">Octubre</span>
+              <span class="date-display__year" data-config="event.dateParts.year">2026</span>
+            </time>
+            <p class="event-date__time" data-config="event.timeLabel">7:00 PM</p>
+            <p class="event-date__venue" data-config="event.venue">Salón Encantado</p>
+            <img
+              class="event-date__separator"
+              src="/src/assets/ornaments/separator-star.svg"
+              width="512"
+              height="96"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+
+          <section
+            class="countdown"
+            id="countdown"
+            aria-labelledby="countdown-title"
+            data-countdown
+            data-countdown-state="pending"
+            role="timer"
+          >
+            <p class="eyebrow" id="countdown-title" data-config="countdown.title">Faltan</p>
+            <div class="countdown__grid">
+              <p class="countdown__item"><strong data-countdown-unit="days">00</strong><span data-config="countdown.units.days">Días</span></p>
+              <p class="countdown__item"><strong data-countdown-unit="hours">00</strong><span data-config="countdown.units.hours">Horas</span></p>
+              <p class="countdown__item"><strong data-countdown-unit="minutes">00</strong><span data-config="countdown.units.minutes">Min</span></p>
+              <p class="countdown__item"><strong data-countdown-unit="seconds">00</strong><span data-config="countdown.units.seconds">Seg</span></p>
+            </div>
+            <p class="countdown__note" data-countdown-note data-config="countdown.loadingNote">Preparando la cuenta regresiva…</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="venue section section--midnight" id="lugar" aria-labelledby="venue-title">
+        <div class="section__inner venue__layout">
+          <div class="venue__copy">
+            <p class="eyebrow" data-config="venueCopy.eyebrow">Nuestro destino</p>
+            <h2 id="venue-title" data-config="venueCopy.title">La celebración tendrá lugar en</h2>
+            <p class="venue__name" data-config="event.venue">Salón Encantado</p>
+            <address>
+              <span data-config="event.city">Guadalajara, Jalisco</span>
+            </address>
+            <p class="venue__note">
+              <span data-config="venueCopy.noteBeforeTime">Las puertas se abrirán a las</span>
+              <span data-config="event.timeLabel">7:00 PM</span>.
+              <span data-config="venueCopy.noteAfterTime">La ruta completa te espera más adelante.</span>
+            </p>
+          </div>
+
+          <div class="venue__illustration" aria-hidden="true">
+            <img src="/src/assets/icons/venue.svg" width="128" height="128" alt="" />
+            <span data-config="quinceanera.initials">VR</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="dress-code section section--night" id="vestimenta" aria-labelledby="dress-title">
+        <div class="section__inner">
+          <img
+            class="section-icon section-icon--centered"
+            src="/src/assets/icons/dress-code.svg"
+            width="128"
+            height="128"
+            alt=""
+            aria-hidden="true"
+          />
+          <p class="eyebrow eyebrow--centered" data-config="dressCode.eyebrow">Código de vestimenta</p>
+          <h2 id="dress-title" data-config="dressCode.title">Formal</h2>
+          <p class="section-intro" data-config="dressCode.intro">
+            No importa de qué casa vengas, esta noche todos celebramos juntos.
+          </p>
+
+          <ul class="dress-code__virtues" aria-label="Virtudes de nuestra celebración">
+            <li><span aria-hidden="true">V</span><strong data-config="dressCode.virtues.0">Valor</strong></li>
+            <li><span aria-hidden="true">A</span><strong data-config="dressCode.virtues.1">Astucia</strong></li>
+            <li><span aria-hidden="true">S</span><strong data-config="dressCode.virtues.2">Sabiduría</strong></li>
+            <li><span aria-hidden="true">L</span><strong data-config="dressCode.virtues.3">Lealtad</strong></li>
+          </ul>
+
+          <div class="dress-code__cards">
+            <article class="dress-card">
+              <span class="dress-card__symbol" aria-hidden="true"></span>
+              <h3 data-config="dressCode.womenLabel">Damas</h3>
+              <p data-config="dressCode.women">Vestido formal</p>
+            </article>
+            <article class="dress-card">
+              <span class="dress-card__symbol" aria-hidden="true"></span>
+              <h3 data-config="dressCode.menLabel">Caballeros</h3>
+              <p data-config="dressCode.men">Traje o vestimenta formal</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-transition section section--parchment" aria-labelledby="journey-title">
+        <div class="section__inner map-transition__inner">
+          <img
+            class="map-transition__footprints"
+            src="/src/assets/map/footprints-trail.svg"
+            width="128"
+            height="128"
+            alt=""
+            aria-hidden="true"
+          />
+          <p class="eyebrow eyebrow--ink" data-config="journey.eyebrow">El viaje comienza</p>
+          <h2 id="journey-title" data-config="journey.title">Todo viaje mágico comienza con un destino.</h2>
+          <img
+            class="map-transition__compass"
+            src="/src/assets/map/compass-rose.svg"
+            width="256"
+            height="256"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+      </section>
+
+      <section class="map-section section section--parchment" id="mapa" aria-labelledby="map-title">
+        <div class="section__inner">
+          <p class="eyebrow eyebrow--ink eyebrow--centered" data-config="mapCopy.eyebrow">Te guiaremos hasta allí</p>
+          <h2 id="map-title" data-config="mapCopy.title">Mapa del destino</h2>
+
+          <div class="map-preview" data-map data-map-state="complete">
+            <img
+              class="map-preview__frame"
+              src="/src/assets/map/parchment-frame.svg"
+              width="800"
+              height="1000"
+              alt=""
+              aria-hidden="true"
+            />
+            <img
+              class="map-preview__constellation"
+              src="/src/assets/map/constellation.svg"
+              width="320"
+              height="180"
+              alt=""
+              aria-hidden="true"
+            />
+            <svg
+              class="map-preview__route"
+              viewBox="0 0 520 300"
+              width="520"
+              height="300"
+              fill="none"
+              aria-hidden="true"
+            >
+              <defs>
+                <mask id="map-route-reveal-mask">
+                  <path
+                    data-map-route-reveal
+                    d="M30 220C95 40 190 350 275 140S430 45 490 190"
+                    stroke="white"
+                    stroke-width="8"
+                    stroke-linecap="round"
+                    fill="none"
+                  />
+                </mask>
+              </defs>
+              <path
+                d="M30 220C95 40 190 350 275 140S430 45 490 190"
+                stroke="currentColor"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-dasharray="10 12"
+                mask="url(#map-route-reveal-mask)"
+              />
+              <circle data-map-origin cx="30" cy="220" r="8" />
+              <circle data-map-arrival cx="490" cy="190" r="10" />
+            </svg>
+            <div class="map-preview__footprints" aria-hidden="true">
+              <img src="/src/assets/map/footprints-pair.svg" width="112" height="128" alt="" />
+              <img src="/src/assets/map/footprints-pair.svg" width="112" height="128" alt="" />
+              <img src="/src/assets/map/footprints-pair.svg" width="112" height="128" alt="" />
+              <img src="/src/assets/map/footprints-pair.svg" width="112" height="128" alt="" />
+              <img src="/src/assets/map/footprints-pair.svg" width="112" height="128" alt="" />
+            </div>
+            <img
+              class="map-preview__compass"
+              src="/src/assets/map/compass-rose.svg"
+              width="256"
+              height="256"
+              alt=""
+              aria-hidden="true"
+            />
+            <img
+              class="map-preview__pin"
+              src="/src/assets/map/location-pin.svg"
+              width="128"
+              height="128"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="map-preview__arrival-spark" aria-hidden="true"></span>
+            <div class="map-preview__destination">
+              <img
+                src="/src/assets/map/label-cartouche.svg"
+                width="400"
+                height="160"
+                alt=""
+                aria-hidden="true"
+              />
+              <strong data-config="event.venue">Salón Encantado</strong>
+              <span data-config="event.city">Guadalajara, Jalisco</span>
+            </div>
+          </div>
+
+          <div class="map-section__details">
+            <address>
+              <span data-config="event.address">Av. de la Luna 123, Bosque Mágico</span><br />
+              <span data-config="event.city">Guadalajara, Jalisco</span>
+            </address>
+            <a
+              class="button"
+              href="https://www.google.com/maps/search/?api=1&amp;query=Guadalajara%2C%20Jalisco"
+              data-map-link
+              aria-label="Ver ubicación en Google Maps, abre una pestaña nueva"
+            >
+              <span data-config="mapCopy.button">Ver ubicación</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery section section--lavender" id="galeria" aria-labelledby="gallery-title">
+        <div class="section__inner">
+          <img
+            class="section-icon"
+            src="/src/assets/icons/gallery.svg"
+            width="128"
+            height="128"
+            alt=""
+            aria-hidden="true"
+          />
+          <p class="eyebrow eyebrow--ink" data-config="gallery.eyebrow">Álbum mágico</p>
+          <h2 id="gallery-title" data-config="gallery.title">Momentos inolvidables</h2>
+          <p class="gallery__intro" data-config="gallery.intro">Muy pronto este espacio contará nuestra historia en imágenes.</p>
+
+          <ul class="gallery-grid" aria-label="Espacios reservados para fotografías">
+            <li class="photo-card photo-card--portrait">
+              <a
+                class="photo-card__link"
+                href="/src/assets/gallery/portrait-vr.svg"
+                data-gallery-item
+                data-gallery-caption="Retrato pendiente"
+                data-config-attr="data-gallery-caption:gallery.captions.0"
+              >
+                <span class="photo-card__placeholder">
+                  <img
+                    src="/src/assets/gallery/portrait-vr.svg"
+                    width="800"
+                    height="1000"
+                    loading="lazy"
+                    decoding="async"
+                    alt="Espacio reservado para un retrato de Valeria"
+                  />
+                </span>
+                <span class="photo-card__caption" data-config="gallery.captions.0">Retrato pendiente</span>
+              </a>
+            </li>
+            <li class="photo-card photo-card--landscape">
+              <a
+                class="photo-card__link"
+                href="/src/assets/gallery/night-xv.svg"
+                data-gallery-item
+                data-gallery-caption="Una noche mágica"
+                data-config-attr="data-gallery-caption:gallery.captions.1"
+              >
+                <span class="photo-card__placeholder">
+                  <img
+                    src="/src/assets/gallery/night-xv.svg"
+                    width="1200"
+                    height="900"
+                    loading="lazy"
+                    decoding="async"
+                    alt="Espacio reservado para una fotografía de la celebración"
+                  />
+                </span>
+                <span class="photo-card__caption" data-config="gallery.captions.1">Una noche mágica</span>
+              </a>
+            </li>
+            <li class="photo-card photo-card--square">
+              <a
+                class="photo-card__link"
+                href="/src/assets/gallery/date-18.svg"
+                data-gallery-item
+                data-gallery-caption="Momentos por descubrir"
+                data-config-attr="data-gallery-caption:gallery.captions.2"
+              >
+                <span class="photo-card__placeholder">
+                  <img
+                    src="/src/assets/gallery/date-18.svg"
+                    width="900"
+                    height="900"
+                    loading="lazy"
+                    decoding="async"
+                    alt="Espacio reservado para un momento del día dieciocho"
+                  />
+                </span>
+                <span class="photo-card__caption" data-config="gallery.captions.2">Momentos por descubrir</span>
+              </a>
+            </li>
+            <li class="photo-card photo-card--portrait">
+              <a
+                class="photo-card__link"
+                href="/src/assets/gallery/memories-2026.svg"
+                data-gallery-item
+                data-gallery-caption="Recuerdos por guardar"
+                data-config-attr="data-gallery-caption:gallery.captions.3"
+              >
+                <span class="photo-card__placeholder">
+                  <img
+                    src="/src/assets/gallery/memories-2026.svg"
+                    width="800"
+                    height="1000"
+                    loading="lazy"
+                    decoding="async"
+                    alt="Espacio reservado para recuerdos de 2026"
+                  />
+                </span>
+                <span class="photo-card__caption" data-config="gallery.captions.3">Recuerdos por guardar</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="rsvp section section--night" id="rsvp" aria-labelledby="rsvp-title" data-rsvp>
+        <div class="section__inner rsvp__inner">
+          <img
+            class="section-icon section-icon--centered"
+            src="/src/assets/icons/rsvp.svg"
+            width="128"
+            height="128"
+            alt=""
+            aria-hidden="true"
+          />
+          <p class="eyebrow eyebrow--centered" data-config="rsvp.eyebrow">Reserva la fecha</p>
+          <h2 id="rsvp-title" data-config="rsvp.title">Tu presencia completará la historia</h2>
+          <p>
+            Confirma tu asistencia y acompáñanos en esta noche mágica. La confirmación se realizará
+            por WhatsApp.
+          </p>
+          <a
+            class="button"
+            href="https://wa.me/5210000000000?text=Hola%2C%20quiero%20confirmar%20mi%20asistencia%20a%20los%20XV%20a%C3%B1os%20de%20Valeria."
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Confirmar asistencia por WhatsApp, abre una pestaña nueva"
+            aria-describedby="rsvp-note"
+            data-rsvp-link
+          >
+            <span data-config="rsvp.button">Confirmar por WhatsApp</span>
+          </a>
+          <p class="rsvp__note" id="rsvp-note" data-rsvp-note data-config="rsvp.note">
+            Se abrirá WhatsApp con un mensaje listo para enviar.
+          </p>
+
+          <div
+            class="rsvp__confirmation"
+            data-rsvp-confirmation
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            <span class="rsvp__confirmation-star rsvp__confirmation-star--one" aria-hidden="true"></span>
+            <span class="rsvp__confirmation-star rsvp__confirmation-star--two" aria-hidden="true"></span>
+            <span class="rsvp__confirmation-star rsvp__confirmation-star--three" aria-hidden="true"></span>
+            <strong data-config="rsvp.confirmationTitle">Tu mensaje está listo</strong>
+            <span data-config="rsvp.confirmationText">Al enviarlo por WhatsApp, tu asistencia quedará confirmada.</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="closing section section--parchment" id="cierre">
+      <div class="section__inner closing__inner">
+        <p class="eyebrow eyebrow--ink" data-config="closing.eyebrow">El inicio de una nueva historia</p>
+        <img
+          class="closing__monogram"
+          src="/src/assets/identity/monogram-circle-vr-xv.svg"
+          width="512"
+          height="512"
+          alt="Monograma de Valeria Ramírez, XV"
+        />
+        <p class="closing__name" data-config="quinceanera.name">Valeria Ramírez</p>
+        <p class="closing__xv" data-config="quinceanera.celebration">XV</p>
+        <time datetime="2026-10-18" data-event-date>
+          <span data-config="event.dateParts.short">18 · 10 · 26</span>
+        </time>
+        <img
+          class="closing__separator"
+          src="/src/assets/ornaments/constellation-line.svg"
+          width="512"
+          height="96"
+          alt=""
+          aria-hidden="true"
+        />
+        <p data-config="closing.phrase">Que la magia nos encuentre juntos.</p>
+      </div>
+    </footer>
+
+    <dialog
+      class="lightbox"
+      data-gallery-lightbox
+      aria-labelledby="lightbox-caption"
+      aria-modal="true"
+    >
+      <div class="lightbox__panel" data-lightbox-panel>
+        <button class="lightbox__close" type="button" data-lightbox-close>
+          <span aria-hidden="true">×</span>
+          <span class="sr-only" data-config="interface.closeImage">Cerrar imagen ampliada</span>
+        </button>
+        <figure class="lightbox__figure">
+          <img class="lightbox__image" alt="" data-lightbox-image />
+          <figcaption id="lightbox-caption" data-lightbox-caption></figcaption>
+        </figure>
+      </div>
+    </dialog>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
