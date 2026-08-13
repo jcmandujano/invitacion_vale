@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-labelledby="title description">
+  <title id="title">Retrato pendiente de Valentina</title>
+  <desc id="description">Marcador decorativo temporal para una fotografía vertical.</desc>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="36%" r="66%">
+      <stop offset="0" stop-color="#4B2E83" stop-opacity=".58"/>
+      <stop offset="1" stop-color="#0B0B0F"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#glow)"/>
+  <rect x="30" y="30" width="740" height="940" fill="none" stroke="#C8A66B" stroke-width="3"/>
+  <rect x="54" y="54" width="692" height="892" fill="none" stroke="#B79ADB" stroke-width="1" opacity=".65"/>
+  <path d="M400 150v110M345 205h110M362 167l76 76M438 167l-76 76" stroke="#E6C98A" stroke-width="3" opacity=".7"/>
+  <circle cx="174" cy="270" r="5" fill="#B79ADB"/><circle cx="630" cy="330" r="4" fill="#E6C98A"/><circle cx="650" cy="800" r="5" fill="#B79ADB"/>
+  <text x="400" y="535" fill="#E6C98A" font-family="Georgia, serif" font-size="180" text-anchor="middle">VR</text>
+  <path d="M220 660h360" stroke="#C8A66B" stroke-width="2"/>
+  <text x="400" y="720" fill="#D8D2E6" font-family="Georgia, serif" font-size="28" letter-spacing="8" text-anchor="middle">RETRATO PENDIENTE</text>
+</svg>

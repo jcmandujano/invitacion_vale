@@ -1,0 +1,220 @@
+.gallery .section-icon {
+  margin-bottom: var(--space-sm);
+}
+
+.gallery h2 {
+  max-width: 10ch;
+  margin-top: var(--space-sm);
+  color: var(--vr-purple);
+  font-style: italic;
+}
+
+.gallery__intro {
+  max-width: 34rem;
+  margin-top: var(--space-md);
+}
+
+.gallery-grid {
+  display: grid;
+  gap: var(--space-lg);
+  margin: var(--space-xl) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photo-card {
+  width: min(88%, 21rem);
+  padding: 0.65rem;
+  border: 1px solid var(--vr-gold);
+  background: var(--vr-parchment);
+  box-shadow: 0 1.25rem 2.5rem rgb(32 29 24 / 20%);
+}
+
+.photo-card__link {
+  display: block;
+  color: inherit;
+  cursor: zoom-in;
+  text-decoration: none;
+}
+
+.photo-card:nth-child(even) {
+  justify-self: end;
+}
+
+.photo-card__placeholder {
+  position: relative;
+  display: grid;
+  min-height: 16rem;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid rgb(200 166 107 / 58%);
+  background:
+    linear-gradient(145deg, rgb(183 154 219 / 24%), transparent),
+    var(--vr-midnight);
+  color: var(--vr-gold-light);
+  font-family: var(--font-display);
+  font-size: 4rem;
+}
+
+.photo-card__placeholder::before {
+  position: absolute;
+  inset: 0.55rem;
+  border: 1px solid rgb(200 166 107 / 36%);
+  content: "";
+}
+
+.photo-card__placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    filter 260ms ease,
+    transform 260ms ease;
+}
+
+.photo-card__caption {
+  display: block;
+  margin-top: 0.6rem;
+  color: var(--vr-purple);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.photo-card__link:hover .photo-card__placeholder img {
+  filter: brightness(1.08);
+  transform: scale(1.012);
+}
+
+.photo-card__link:focus-visible {
+  outline: 2px solid var(--vr-purple);
+  outline-offset: 0.35rem;
+}
+
+.photo-card:nth-child(2) .photo-card__placeholder,
+.photo-card:nth-child(4) .photo-card__placeholder {
+  background:
+    linear-gradient(145deg, rgb(75 46 131 / 36%), transparent),
+    var(--vr-black);
+}
+
+.photo-card--portrait .photo-card__placeholder {
+  aspect-ratio: 4 / 5;
+}
+
+.photo-card--landscape .photo-card__placeholder {
+  aspect-ratio: 4 / 3;
+}
+
+.photo-card--square .photo-card__placeholder {
+  aspect-ratio: 1;
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
+
+.lightbox {
+  width: min(94vw, 68rem);
+  max-width: none;
+  max-height: 94svh;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+  color: var(--vr-parchment);
+}
+
+.lightbox::backdrop {
+  background: rgb(7 6 11 / 88%);
+  backdrop-filter: blur(0.35rem);
+}
+
+.lightbox__panel {
+  position: relative;
+  padding: clamp(0.6rem, 2vw, 1rem);
+  border: 1px solid var(--vr-gold);
+  background:
+    radial-gradient(circle at 50% 20%, rgb(75 46 131 / 28%), transparent 48%),
+    var(--vr-black);
+  box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 52%);
+}
+
+.lightbox__close {
+  position: absolute;
+  z-index: 2;
+  top: 0.7rem;
+  right: 0.7rem;
+  display: grid;
+  width: 2.75rem;
+  aspect-ratio: 1;
+  padding: 0;
+  place-items: center;
+  border: 1px solid var(--vr-gold);
+  border-radius: 50%;
+  background: rgb(11 11 15 / 88%);
+  color: var(--vr-gold-light);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.lightbox__close:hover {
+  border-color: var(--vr-gold-light);
+  box-shadow: 0 0 1rem rgb(183 154 219 / 28%);
+}
+
+.lightbox__figure {
+  display: grid;
+  justify-items: center;
+}
+
+.lightbox__image {
+  width: auto;
+  max-width: 100%;
+  max-height: calc(94svh - 5.5rem);
+  object-fit: contain;
+}
+
+.lightbox figcaption {
+  padding: 0.65rem 3.25rem 0.1rem;
+  color: var(--vr-gold-light);
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 4vw, 1.35rem);
+  font-style: italic;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-card__placeholder img {
+    transition: none;
+  }
+}
+
+@media (min-width: 48rem) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+
+  .photo-card {
+    width: min(90%, 24rem);
+  }
+
+  .photo-card:nth-child(2) {
+    margin-top: var(--space-2xl);
+    transform: rotate(1.5deg);
+  }
+
+  .photo-card:nth-child(3) {
+    justify-self: end;
+    transform: rotate(-1.25deg);
+  }
+
+  .photo-card:nth-child(4) {
+    margin-top: var(--space-lg);
+    transform: rotate(0.75deg);
+  }
+}

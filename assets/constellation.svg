@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="300" viewBox="0 0 520 300" fill="none">
+
+<style>
+.stroke { stroke:#C8A66B; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+.stroke2 { stroke:#E6C98A; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+.fill-gold { fill:#C8A66B; }
+.fill-purple { fill:#4B2E83; }
+.fill-dark { fill:#0B0B0F; }
+.text { fill:#E6C98A; font-family: Georgia, "Times New Roman", serif; }
+</style>
+<path id="route-path" d="M30 220C95 40 190 350 275 140S430 45 490 190" stroke="#C8A66B" stroke-width="4" fill="none" stroke-dasharray="10 12"/>
+<circle cx="30" cy="220" r="8" fill="#B79ADB"/>
+<circle cx="490" cy="190" r="10" fill="#E6C98A"/>
+
+</svg>

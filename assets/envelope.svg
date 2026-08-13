@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+
+<style>
+.stroke { stroke:#C8A66B; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+.stroke2 { stroke:#E6C98A; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+.fill-gold { fill:#C8A66B; }
+.fill-purple { fill:#4B2E83; }
+.fill-dark { fill:#0B0B0F; }
+.text { fill:#E6C98A; font-family: Georgia, "Times New Roman", serif; }
+</style><g class="stroke"><path d="M18 30l30-12 32 12 30-12v80l-30 12-32-12-30 12V30Z"/><path d="M48 18v80M80 30v80"/><path d="M28 80c22-20 40-7 52-25 9-13 14-18 22-19" stroke-dasharray="5 7"/></g>
+</svg>

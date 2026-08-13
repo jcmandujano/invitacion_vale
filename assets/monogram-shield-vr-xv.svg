@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+
+<style>
+.stroke { stroke:#C8A66B; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+.stroke2 { stroke:#E6C98A; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+.fill-gold { fill:#C8A66B; }
+.fill-purple { fill:#4B2E83; }
+.fill-dark { fill:#0B0B0F; }
+.text { fill:#E6C98A; font-family: Georgia, "Times New Roman", serif; }
+</style>
+<circle cx="256" cy="256" r="214" stroke="#C8A66B" stroke-width="8"/>
+<circle cx="256" cy="256" r="184" stroke="#C8A66B" stroke-width="2" opacity=".75"/>
+<g fill="#E6C98A">
+  <circle cx="256" cy="92" r="5"/><path d="M256 62v60M226 92h60" stroke="#E6C98A" stroke-width="3"/>
+</g>
+<text x="256" y="265" text-anchor="middle" class="text" font-size="132" font-weight="600">VR</text>
+<text x="256" y="350" text-anchor="middle" class="text" font-size="54" letter-spacing="10">XV</text>
+<path d="M118 389c52 32 224 32 276 0" stroke="#C8A66B" stroke-width="3" fill="none"/>
+<g fill="#B79ADB" opacity=".95">
+  <circle cx="154" cy="405" r="5"/><circle cx="178" cy="414" r="4"/><circle cx="358" cy="405" r="5"/><circle cx="334" cy="414" r="4"/>
+</g>
+
+</svg>

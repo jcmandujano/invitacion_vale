@@ -1,0 +1,122 @@
+.rsvp {
+  min-height: 90svh;
+}
+
+.rsvp__inner {
+  position: relative;
+  display: grid;
+  width: min(100%, 42rem);
+  min-height: 65svh;
+  place-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.rsvp__inner::before,
+.rsvp__inner::after {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border-color: rgb(200 166 107 / 55%);
+  content: "";
+}
+
+.rsvp__inner::before {
+  top: 0;
+  left: 0;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.rsvp__inner::after {
+  right: 0;
+  bottom: 0;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.rsvp h2 {
+  margin-top: var(--space-md);
+  color: var(--vr-gold-light);
+  text-transform: uppercase;
+}
+
+.rsvp__inner > p:not(.eyebrow, .rsvp__note) {
+  max-width: 34rem;
+  margin-top: var(--space-lg);
+  color: var(--vr-lavender);
+}
+
+.rsvp .button {
+  margin-top: var(--space-lg);
+}
+
+.rsvp__note {
+  margin-top: var(--space-sm);
+  color: rgb(216 210 230 / 62%);
+  font-size: 0.85rem;
+}
+
+.rsvp__confirmation {
+  position: relative;
+  display: grid;
+  gap: 0.3rem;
+  width: min(100%, 28rem);
+  margin-top: var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
+  border: 1px solid rgb(200 166 107 / 38%);
+  background:
+    radial-gradient(circle at 50% 0%, rgb(183 154 219 / 13%), transparent 68%),
+    rgb(11 11 15 / 28%);
+}
+
+.rsvp__confirmation[hidden] {
+  display: none;
+}
+
+.rsvp__confirmation strong {
+  color: var(--vr-gold-light);
+  font-family: var(--font-accent);
+  font-size: clamp(0.9rem, 3vw, 1.05rem);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.rsvp__confirmation > span:not(.rsvp__confirmation-star) {
+  color: var(--vr-lavender);
+  font-size: 0.95rem;
+}
+
+.rsvp__confirmation-star {
+  position: absolute;
+  width: 0.55rem;
+  aspect-ratio: 1;
+  background: var(--vr-gold-light);
+  clip-path: polygon(50% 0, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0 50%, 40% 40%);
+  filter: drop-shadow(0 0 0.35rem rgb(230 201 138 / 55%));
+}
+
+.rsvp__confirmation-star--one {
+  top: -0.3rem;
+  left: 12%;
+}
+
+.rsvp__confirmation-star--two {
+  top: 18%;
+  right: -0.25rem;
+  transform: scale(0.72);
+}
+
+.rsvp__confirmation-star--three {
+  bottom: -0.22rem;
+  left: 28%;
+  transform: scale(0.58);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rsvp__confirmation,
+  .rsvp__confirmation-star {
+    transition: none;
+  }
+}
