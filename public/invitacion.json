@@ -46,12 +46,12 @@
   },
   "intro": {
     "loader": "Preparando la magia…",
-    "eyebrow": "La Escuela de Magia y Hechicería tiene el honor de convocarle al Gran Comedor",
+    "eyebrow": "Colegio de Magia y Hechicería. Nos complace informarle que ha sido convocada al Gran Comedor",
     "heading": "La invitación ha llegado",
-    "letterTagline": "Un baile en honor a nuestra alumna",
-    "recipientPrefix": "XV años",
-    "message": "Un baile en honor a nuestra alumna",
-    "hintReady": "Toca el sello para abrir",
+    "letterTagline": "Baile de Invierno",
+    "recipientPrefix": "",
+    "message": "Baile de Invierno",
+    "hintReady": "Toca el sello para abrir la carta",
     "hintOpening": "Abriendo la invitación…",
     "hintOpened": "La carta ha sido revelada"
   },
