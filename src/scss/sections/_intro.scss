@@ -147,12 +147,41 @@ body.intro-active {
   display: none;
 }
 
-.intro__message {
-  max-width: 24rem;
-  color: var(--vr-lavender);
-  font-family: var(--font-display);
-  font-size: clamp(1.1rem, 5vw, 1.35rem);
-  font-style: italic;
+.intro__institution,
+.intro__hall,
+.intro__ball {
+  color: #b7a27b;
+  font-family: var(--font-accent);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.intro__institution {
+  margin: 0;
+  font-size: clamp(0.7rem, 2.5vw, 0.85rem);
+  letter-spacing: 0.09em;
+}
+
+.intro__notice {
+  max-width: 30rem;
+  margin: 0;
+  color: rgb(243 233 214 / 86%);
+  font-family: var(--font-body);
+  font-size: clamp(0.9rem, 3.5vw, 1.05rem);
+  line-height: 1.4;
+}
+
+.intro__hall {
+  margin: 0;
+  font-size: clamp(1.55rem, 7vw, 2.65rem);
+  letter-spacing: 0.045em;
+  line-height: 1.05;
+}
+
+.intro__ball {
+  margin: 0.2rem 0 0;
+  font-size: clamp(0.9rem, 4vw, 1.25rem);
+  letter-spacing: 0.08em;
 }
 
 .intro__hint {
@@ -178,7 +207,7 @@ body.intro-active {
     gap: 0.55rem;
   }
 
-  .intro__message {
-    font-size: 1rem;
+  .intro__notice {
+    font-size: 0.85rem;
   }
 }
