@@ -24,8 +24,8 @@
       "year": "2026",
       "short": "8 · 11 · 26"
     },
-    "timeLabel": "19:00",
-    "venue": "Salón Centenario",
+    "timeLabel": "13:00",
+    "venue": "Jardín Centenario",
     "address": "Av. Centenario 367 A, Nextengo, Azcapotzalco,",
     "city": "CDMX",
     "mapsUrl": "https://maps.app.goo.gl/HvgwE2QNemvGwyuk6"
@@ -62,7 +62,7 @@
     "portraitCaption": "Vale Ruiz",
     "storyEyebrow": "XV años",
     "storyTitle": "La celebración",
-    "storyBody": "Por disposición del Colegio, el Gran Comedor abrirá sus puertas el 8 de noviembre para celebrar los XV años de Valentina. Su nombre figura entre los invitados seleccionados para esta celebración"
+    "storyBody": "Por disposición del Colegio, el Gran Comedor abrirá sus puertas el 8 de noviembre para celebrar los XV años de Valentina. Su nombre figura entre lxs invitadxs seleccionados para esta celebración"
   },
   "countdown": {
     "title": "Faltan",
@@ -72,21 +72,21 @@
       "minutes": "Min",
       "seconds": "Seg"
     },
-    "loadingNote": "Consultando la fecha del gran acontecimiento…",
+    "loadingNote": "Consultando los registros del Colegio…",
     "activeNote": "Cada segundo nos acerca al Baile de Invierno.",
-    "unavailableTitle": "La fecha será anunciada",
-    "unavailableNote": "La magia está preparando los últimos detalles.",
+    "unavailableTitle": "Pendiente de confirmación",
+    "unavailableNote": "La fecha de la celebración aún no ha sido registrada.",
     "completeTitle": "Las puertas del Gran Comedor están abiertas",
-    "completeNote": "La gran noche ha llegado. Gracias por ser parte de esta historia."
+    "completeNote": "Se espera su presencia para el Baile de Invierno."
   },
   "dateCopy": {
     "eyebrow": "Te esperamos",
-    "accessibleTitle": "Fecha y hora del Baile de Invierno"
+    "accessibleTitle": "9 Noviembre 2026, 13:00 hrs",
   },
   "venueCopy": {
     "eyebrow": "El Gran Comedor",
     "title": "Su lugar ha sido reservado",
-    "noteBeforeTime": "Las puertas se abrirán a las",
+    "noteBeforeTime": "Las puertas se abrirán a las 13:00hrs",
     "noteAfterTime": "Prepárese para una tarde de celebración, magia y buenos recuerdos."
   },
  "giftRegistry": {
