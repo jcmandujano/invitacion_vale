@@ -48,21 +48,21 @@
     "loader": "Preparando la correspondencia…",
     "eyebrow": "COLEGIO DE MAGIA Y HECHICERÍA",
     "heading": "Has sido seleccionado",
-    "letterTagline": "Una convocatoria al Gran Comedor",
-    "recipientPrefix": "Estimado invitado:",
-    "message": "Nos complace informarle que ha sido seleccionado para asistir al Baile de Invierno en honor a los XV años de Valentina.",
+    "letterTagline": "Convocatoria al Gran Comedor",
+    "recipientPrefix": "",
+    "message": "Nos complace informarle que su nombre figura entre los invitados convocados al Gran Comedor para el Baile de Invierno con motivo de los XV años de Valentina.",
     "hintReady": "Toca el sello para abrir la carta",
     "hintOpening": "Abriendo la correspondencia…",
     "hintOpened": "La carta ha sido revelada"
   },
   "welcome": {
-    "eyebrow": "Una convocatoria especial",
-    "tagline": "El Colegio de Magia y Hechicería le invita al Gran Comedor.",
+    "eyebrow": "COLEGIO DE MAGIA Y HECHICERÍA",
+    "tagline": "Las puertas del Gran Comedor se abrirán para el Baile de Invierno",
     "portraitStatus": "Retrato pendiente",
-    "portraitCaption": "Una tarde digna de recordar",
+    "portraitCaption": "Vale Ruiz",
     "storyEyebrow": "XV años",
-    "storyTitle": "Una gran celebración",
-    "storyBody": "Las puertas del Gran Comedor se abrirán para celebrar una tarde especial en honor a los XV años de Valentina y has sido seleccionado para formar parte de esta celebración."
+    "storyTitle": "La celebración",
+    "storyBody": "Por disposición del Colegio, el Gran Comedor abrirá sus puertas el 8 de noviembre para celebrar los XV años de Valentina. Su nombre figura entre los invitados seleccionados para esta celebración"
   },
   "countdown": {
     "title": "Faltan",
@@ -89,13 +89,13 @@
     "noteBeforeTime": "Las puertas se abrirán a las",
     "noteAfterTime": "Prepárese para una tarde de celebración, magia y buenos recuerdos."
   },
-  "giftRegistry": {
-    "url": "",
-    "eyebrow": "Mesa de regalos",
-    "title": "Tu presencia es nuestro mejor regalo",
-    "note": "Si deseas obsequiar algo a Valentina, encontrarás la mesa de regalos en el siguiente enlace.",
-    "button": "Ver mesa de regalos"
-  },
+ "giftRegistry": {
+  "url": "",
+  "eyebrow": "Correo de Lechuzas",
+  "title": "Lista de Regalos",
+  "note": "La correspondencia para Vale queda abierta. Si deseas hacerle llegar un presente, encontrarás la lista en el siguiente enlace",
+  "button": "Ver la Tienda Mágica"
+},
   "dressCode": {
     "eyebrow": "Código de vestimenta",
     "title": "Formal",
@@ -145,7 +145,7 @@
     "confirmationText": "Completa el formulario para confirmar tu asistencia al Gran Comedor."
   },
   "closing": {
-    "eyebrow": "Una noche en el Gran Comedor",
-    "phrase": "Que la magia nos encuentre juntos."
+    "eyebrow": "COLEGIO DE MAGIA Y HECHICERÍA",
+    "phrase": "Se espera su presencia en el Gran Comedor."
   }
 }
