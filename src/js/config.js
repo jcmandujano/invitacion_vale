@@ -14,7 +14,7 @@ const fallbackConfig = {
     title: "Mis XV años",
     date: "2026-11-8T13:00:00-06:00",
     dateParts: { day: "8", month: "Noviembre", year: "2026", short: "8 · 11 · 26" },
-    timeLabel: "7:00 PM",
+    timeLabel: "13 Hrs",
     venue: "Jardín Centenario",
     address: "Av. Centenario 367 A, Nextengo, Azcapotzalco,",
     city: "Azcapotzalco, CDMX",

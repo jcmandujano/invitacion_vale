@@ -30,7 +30,7 @@
     "city": "CDMX",
     "mapsUrl": "https://maps.app.goo.gl/HvgwE2QNemvGwyuk6"
   },
-  "navigation": {
+/*   "navigation": {
     "home": "Inicio",
     "date": "La celebración",
     "dressCode": "Vestimenta",
@@ -39,7 +39,7 @@
     "rsvp": "Confirmación",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú"
-  },
+  }, */
   "interface": {
     "skipIntro": "Saltar la introducción e ir a la invitación",
     "closeImage": "Cerrar imagen ampliada"

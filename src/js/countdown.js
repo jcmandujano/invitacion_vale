@@ -77,7 +77,7 @@ export const initCountdown = ({ date } = {}, copy = {}) => {
       `Faltan ${remaining.days} días, ${remaining.hours} horas, ${remaining.minutes} minutos y ${remaining.seconds} segundos`,
     );
 
-    if (note) note.textContent = copy.activeNote ?? "Cada segundo nos acerca a una noche inolvidable.";
+    if (note) note.textContent = copy.activeNote ?? "Cada segundo nos acerca a una tarde inolvidable.";
 
     const delayToNextSecond = SECOND - (Date.now() % SECOND) + 20;
     timerId = window.setTimeout(update, delayToNextSecond);
