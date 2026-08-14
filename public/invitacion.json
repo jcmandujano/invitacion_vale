@@ -89,6 +89,13 @@
     "noteBeforeTime": "Las puertas se abrirán a las",
     "noteAfterTime": "Prepárese para una tarde de celebración, magia y buenos recuerdos."
   },
+  "giftRegistry": {
+    "url": "",
+    "eyebrow": "Mesa de regalos",
+    "title": "Tu presencia es nuestro mejor regalo",
+    "note": "Si deseas obsequiar algo a Valentina, encontrarás la mesa de regalos en el siguiente enlace.",
+    "button": "Ver mesa de regalos"
+  },
   "dressCode": {
     "eyebrow": "Código de vestimenta",
     "title": "Formal",
@@ -125,17 +132,17 @@
     ]
   },
   "rsvp": {
-    "method": "whatsapp",
-    "phone": "5210000000000",
-    "message": "Hola, quiero confirmar mi asistencia al Baile de Invierno por los XV años de Valentina Ruiz Hernández.",
-    "eyebrow": "Confirma tu asistencia",
-    "title": "El Colegio espera tu respuesta",
-    "button": "Enviar confirmación",
-    "note": "Tu lechuza abrirá WhatsApp con un mensaje listo para enviar.",
-    "openedButton": "Abrir WhatsApp de nuevo",
-    "openedNote": "Envía el mensaje en WhatsApp para completar tu confirmación.",
-    "confirmationTitle": "Tu respuesta ha sido preparada",
-    "confirmationText": "Envía el mensaje para confirmar tu asistencia al Gran Comedor."
+    "method": "google-forms",
+    "formUrl": "",
+    "eyebrow": "Reserva tu lugar",
+    "title": "El Gran Comedor espera tu respuesta",
+    "description": "Reserva tu lugar en el Gran Comedor y acompáñanos en esta noche mágica.",
+    "button": "Reservar mi lugar",
+    "note": "Se abrirá un formulario de Google para confirmar tu asistencia.",
+    "openedButton": "Abrir formulario de nuevo",
+    "openedNote": "Completa el formulario para reservar tu lugar en el Gran Comedor.",
+    "confirmationTitle": "Tu lugar está por reservarse",
+    "confirmationText": "Completa el formulario para confirmar tu asistencia al Gran Comedor."
   },
   "closing": {
     "eyebrow": "Una noche en el Gran Comedor",

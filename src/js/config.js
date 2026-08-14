@@ -21,10 +21,10 @@ const fallbackConfig = {
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Guadalajara%2C%20Jalisco",
   },
   dressCode: { title: "Formal", women: "Vestido formal", men: "Traje o vestimenta formal" },
+  giftRegistry: { url: "" },
   rsvp: {
-    method: "whatsapp",
-    phone: "5210000000000",
-    message: "Hola, quiero confirmar mi asistencia a los XV años de Valentina.",
+    method: "google-forms",
+    formUrl: "",
   },
 };
 

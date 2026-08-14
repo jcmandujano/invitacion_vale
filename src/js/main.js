@@ -69,6 +69,25 @@ for (const link of document.querySelectorAll("[data-map-link]")) {
   link.classList.add("button--disabled");
 }
 
+for (const link of document.querySelectorAll("[data-gift-registry-link]")) {
+  const note = document.querySelector("[data-gift-registry-note]");
+  const url = eventConfig.giftRegistry?.url;
+
+  if (typeof url === "string" && /^https?:\/\//i.test(url)) {
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    continue;
+  }
+
+  link.setAttribute("aria-disabled", "true");
+  link.classList.add("button--disabled");
+  if (note) {
+    note.hidden = false;
+    note.textContent = "La mesa de regalos estará disponible muy pronto.";
+  }
+}
+
 initScrollReveals();
 initMapAnimation();
 initGallery();

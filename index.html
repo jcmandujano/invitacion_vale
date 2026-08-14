@@ -147,7 +147,7 @@
             <p class="eyebrow eyebrow--ink" data-config="welcome.eyebrow">Celebramos sus XV años</p>
             <img
               class="welcome__monogram"
-              src="/src/assets/identity/monogram-shield-vr-xv.svg"
+              src="/src/assets/identity/monogram-circle-vr-xv.svg"
               width="512"
               height="512"
               alt="Emblema VR, XV"
@@ -245,17 +245,15 @@
       <section class="venue section section--midnight" id="lugar" aria-labelledby="venue-title">
         <div class="section__inner venue__layout">
           <div class="venue__copy">
-            <p class="eyebrow" data-config="venueCopy.eyebrow">Nuestro destino</p>
-            <h2 id="venue-title" data-config="venueCopy.title">La celebración tendrá lugar en</h2>
-            <p class="venue__name" data-config="event.venue">Salón Encantado</p>
-            <address>
-              <span data-config="event.city">Guadalajara, Jalisco</span>
-            </address>
+            <p class="eyebrow" data-config="giftRegistry.eyebrow">Mesa de regalos</p>
+            <h2 id="venue-title" data-config="giftRegistry.title">Tu presencia es nuestro mejor regalo</h2>
             <p class="venue__note">
-              <span data-config="venueCopy.noteBeforeTime">Las puertas se abrirán a las</span>
-              <span data-config="event.timeLabel">7:00 PM</span>.
-              <span data-config="venueCopy.noteAfterTime">La ruta completa te espera más adelante.</span>
+              <span data-config="giftRegistry.note">Si deseas obsequiar algo a Valentina, encontrarás la mesa de regalos en el siguiente enlace.</span>
             </p>
+            <a class="button" data-gift-registry-link aria-describedby="gift-registry-note">
+              <span data-config="giftRegistry.button">Ver mesa de regalos</span>
+            </a>
+            <p class="venue__note" id="gift-registry-note" data-gift-registry-note hidden></p>
           </div>
 
           <div class="venue__illustration" aria-hidden="true">
@@ -548,23 +546,17 @@
           />
           <p class="eyebrow eyebrow--centered" data-config="rsvp.eyebrow">Reserva la fecha</p>
           <h2 id="rsvp-title" data-config="rsvp.title">Tu presencia completará la historia</h2>
-          <p>
-            Confirma tu asistencia y acompáñanos en esta noche mágica. La confirmación se realizará
-            por WhatsApp.
-          </p>
+          <p data-config="rsvp.description">Reserva tu lugar en el Gran Comedor y acompáñanos en esta noche mágica.</p>
           <a
             class="button"
-            href="https://wa.me/5210000000000?text=Hola%2C%20quiero%20confirmar%20mi%20asistencia%20a%20los%20XV%20a%C3%B1os%20de%20Valentina."
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Confirmar asistencia por WhatsApp, abre una pestaña nueva"
+            aria-label="Reservar lugar en el Gran Comedor, abre Google Forms en una pestaña nueva"
             aria-describedby="rsvp-note"
             data-rsvp-link
           >
-            <span data-config="rsvp.button">Confirmar por WhatsApp</span>
+            <span data-config="rsvp.button">Reservar mi lugar</span>
           </a>
           <p class="rsvp__note" id="rsvp-note" data-rsvp-note data-config="rsvp.note">
-            Se abrirá WhatsApp con un mensaje listo para enviar.
+            Se abrirá un formulario de Google para confirmar tu asistencia.
           </p>
 
           <div
@@ -577,8 +569,8 @@
             <span class="rsvp__confirmation-star rsvp__confirmation-star--one" aria-hidden="true"></span>
             <span class="rsvp__confirmation-star rsvp__confirmation-star--two" aria-hidden="true"></span>
             <span class="rsvp__confirmation-star rsvp__confirmation-star--three" aria-hidden="true"></span>
-            <strong data-config="rsvp.confirmationTitle">Tu mensaje está listo</strong>
-            <span data-config="rsvp.confirmationText">Al enviarlo por WhatsApp, tu asistencia quedará confirmada.</span>
+            <strong data-config="rsvp.confirmationTitle">Tu lugar está por reservarse</strong>
+            <span data-config="rsvp.confirmationText">Completa el formulario para confirmar tu asistencia al Gran Comedor.</span>
           </div>
         </div>
       </section>

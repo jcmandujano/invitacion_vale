@@ -315,6 +315,10 @@
   color: var(--vr-gold-light);
 }
 
+.venue__copy > .button {
+  margin-top: var(--space-xl);
+}
+
 .venue__illustration {
   position: relative;
   display: grid;
