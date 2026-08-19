@@ -3,6 +3,7 @@ const fallbackConfig = {
   timeZone: "America/Mexico_City",
   features: {
     navigation: true,
+    skipIntro: false,
   },
   quinceanera: {
     name: "Vale Ruiz",

@@ -3,7 +3,8 @@
   "locale": "es-MX",
   "timeZone": "America/Mexico_City",
   "features": {
-    "navigation": false
+    "navigation": false,
+    "skipIntro": true
   },
   "meta": {
     "title": "XV Valentina Ruiz Hernández",
@@ -13,11 +14,11 @@
     "name": "Valentina Ruiz Hernández",
     "firstName": "Valentina",
     "initials": "VR",
-    "celebration": "XV"
+    "celebration": "XV años"
   },
   "event": {
     "title": "Baile de Invierno",
-    "date": "2026-11-8T1300:00-06:00",
+    "date": "2026-11-08T13:00:00-06:00",
     "dateParts": {
       "day": "8",
       "month": "Noviembre",
@@ -30,16 +31,6 @@
     "city": "CDMX",
     "mapsUrl": "https://maps.app.goo.gl/HvgwE2QNemvGwyuk6"
   },
-/*   "navigation": {
-    "home": "Inicio",
-    "date": "La celebración",
-    "dressCode": "Vestimenta",
-    "map": "El destino",
-    "gallery": "Recuerdos",
-    "rsvp": "Confirmación",
-    "openMenu": "Abrir menú",
-    "closeMenu": "Cerrar menú"
-  }, */
   "interface": {
     "skipIntro": "Saltar la introducción e ir a la invitación",
     "closeImage": "Cerrar imagen ampliada"
@@ -81,7 +72,7 @@
   },
   "dateCopy": {
     "eyebrow": "Te esperamos",
-    "accessibleTitle": "9 Noviembre 2026, 13:00 hrs",
+    "accessibleTitle": "9 Noviembre 2026, 13:00 hrs"
   },
   "venueCopy": {
     "eyebrow": "El Gran Comedor",
@@ -90,7 +81,7 @@
     "noteAfterTime": "Prepárese para una tarde de celebración, magia y buenos recuerdos."
   },
  "giftRegistry": {
-  "url": "",
+  "url": "https://www.amazon.com.mx/registries/gl/guest-view/2PS5XXL483ND0?ref_=cm_sw_r_apin_ggr-subnav-share_N0G4N1JXY4NXC4YKQVH5&language=en-US",
   "eyebrow": "Correo de Lechuzas",
   "title": "Lista de Regalos",
   "note": "La correspondencia para Vale queda abierta. Si deseas hacerle llegar un presente, encontrarás la lista en el siguiente enlace",
@@ -112,12 +103,12 @@
     "men": "Traje o vestimenta formal"
   },
   "journey": {
-    "eyebrow": "El camino al Gran Comedor",
-    "title": "Todo gran acontecimiento comienza con un destino."
+    "eyebrow": "EL MAPA DEL MERODEADOR",
+    "title": "Juro solemnemente que el camino comienza aquí."
   },
   "mapCopy": {
-    "eyebrow": "El destino le espera",
-    "title": "Mapa hacia el Gran Comedor",
+    "eyebrow": "Ubicación",
+    "title": "Siga las huellas para revelar la ubicación",
     "button": "Ver ubicación"
   },
   "gallery": {
@@ -134,18 +125,18 @@
   "rsvp": {
     "method": "google-forms",
     "formUrl": "",
-    "eyebrow": "Reserva tu lugar",
+    "eyebrow": "CONFIRMACIÓN DE ASISTENCIA",
     "title": "El Gran Comedor espera tu respuesta",
-    "description": "Reserva tu lugar en el Gran Comedor y acompáñanos en esta noche mágica.",
-    "button": "Reservar mi lugar",
+    "description": "Su lugar ha sido reservado para el Baile de Invierno. Confirme su asistencia mediante el correo de lechuzas.",
+    "button": "Enviar mi respuesta",
     "note": "Se abrirá un formulario de Google para confirmar tu asistencia.",
     "openedButton": "Abrir formulario de nuevo",
-    "openedNote": "Completa el formulario para reservar tu lugar en el Gran Comedor.",
-    "confirmationTitle": "Tu lugar está por reservarse",
-    "confirmationText": "Completa el formulario para confirmar tu asistencia al Gran Comedor."
+    "openedNote": "Completa el formulario para confirmar tu lugar en el Gran Comedor.",
+    "confirmationTitle": "Su respuesta ha sido recibida",
+    "confirmationText": "El Colegio ha registrado su confirmación."
   },
   "closing": {
     "eyebrow": "COLEGIO DE MAGIA Y HECHICERÍA",
-    "phrase": "Se espera su presencia en el Gran Comedor."
+    "phrase": "Las puertas del Gran Comedor se abrirán para el Baile de Invierno"
   }
 }

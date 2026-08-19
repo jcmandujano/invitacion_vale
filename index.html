@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Allura&amp;family=Cinzel:wght@500&amp;family=Lato:wght@400;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Allura&amp;family=Cinzel:wght@500&amp;family=Lora:wght@400;700&amp;display=swap"
       rel="stylesheet"
     />
 
@@ -142,53 +142,29 @@
 
     <main id="main-content" tabindex="-1">
       <section class="welcome section section--parchment" id="inicio" aria-labelledby="welcome-title">
-        <div class="section__inner welcome__layout">
-          <div class="welcome__identity">
-            <p class="eyebrow eyebrow--ink" data-config="welcome.eyebrow">Celebramos sus XV años</p>
-            <img
-              class="welcome__monogram"
-              src="/src/assets/identity/monogram-circle-vr-xv.svg"
-              width="512"
-              height="512"
-              alt="Emblema VR, XV"
-            />
-            <h1 id="welcome-title" class="name-script" data-config="quinceanera.name">Valentina Ramírez</h1>
-            <p class="welcome__xv" data-config="quinceanera.celebration">XV</p>
-            <p class="welcome__tagline" data-config="welcome.tagline">Una nueva historia está por comenzar.</p>
-            <img
-              class="welcome__separator"
-              src="/src/assets/ornaments/separator-star.svg"
-              width="512"
-              height="96"
-              alt=""
-              aria-hidden="true"
-            />
-          </div>
-
-          <figure class="portrait-placeholder">
-            <div class="portrait-placeholder__frame" role="img" aria-label="Fotografía de Valentina pendiente">
-              <span data-config="quinceanera.initials">VR</span>
-              <small data-config="welcome.portraitStatus">Retrato pendiente</small>
-            </div>
-            <figcaption data-config="welcome.portraitCaption">Una noche para recordar</figcaption>
-          </figure>
-
-          <div class="welcome__story">
-            <img
-              class="section-icon"
-              src="/src/assets/ornaments/separator-star.svg"
-              width="512"
-              height="96"
-              alt=""
-              aria-hidden="true"
-            />
-            <p class="eyebrow eyebrow--ink" data-config="welcome.storyEyebrow">Sobre mí</p>
-            <h2 data-config="welcome.storyTitle">El comienzo de una nueva historia</h2>
-            <p data-config="welcome.storyBody">
-              Valentina está por comenzar una nueva etapa llena de sueños, magia y momentos
-              inolvidables. Acompáñanos a celebrar una noche muy especial en honor a sus XV años.
-            </p>
-          </div>
+        <div class="section__inner welcome__content closing__inner">
+          <p class="eyebrow eyebrow--ink" data-config="closing.eyebrow">El inicio de una nueva historia</p>
+          <img
+            class="closing__monogram"
+            src="/src/assets/identity/monogram-circle-vr-xv.svg"
+            width="512"
+            height="512"
+            alt="Monograma de Valentina Ruiz, XV"
+          />
+          <h1 id="welcome-title" class="closing__name name-script" data-config="quinceanera.name">Valentina Ruiz</h1>
+          <p class="closing__xv" data-config="quinceanera.celebration">XV</p>
+          <time datetime="2026-11-08" data-event-date>
+            <span data-config="event.dateParts.short">08 · 11 · 26</span>
+          </time>
+          <img
+            class="closing__separator"
+            src="/src/assets/ornaments/constellation-line.svg"
+            width="512"
+            height="96"
+            alt=""
+            aria-hidden="true"
+          />
+          <p data-config="closing.phrase">Las puertas del Gran Comedor se abrirán para el Baile de Invierno</p>
         </div>
       </section>
 
@@ -205,13 +181,13 @@
             />
             <p class="eyebrow" data-config="dateCopy.eyebrow">La celebración</p>
             <h2 class="sr-only" id="date-title" data-config="dateCopy.accessibleTitle">Fecha y hora de la celebración</h2>
-            <time class="date-display" datetime="2026-10-18T19:00:00-06:00" data-event-datetime>
-              <span class="date-display__day" data-config="event.dateParts.day">18</span>
-              <span class="date-display__month" data-config="event.dateParts.month">Octubre</span>
+            <time class="date-display" datetime="2026-11-08T13:00:00-06:00" data-event-datetime>
+              <span class="date-display__day" data-config="event.dateParts.day">8</span>
+              <span class="date-display__month" data-config="event.dateParts.month">Noviembre</span>
               <span class="date-display__year" data-config="event.dateParts.year">2026</span>
             </time>
-            <p class="event-date__time" data-config="event.timeLabel">7:00 PM</p>
-            <p class="event-date__venue" data-config="event.venue">Salón Encantado</p>
+            <p class="event-date__time" data-config="event.timeLabel">13:00 PM</p>
+            <p class="event-date__venue" data-config="event.venue">Salón Centenario</p>
             <img
               class="event-date__separator"
               src="/src/assets/ornaments/separator-star.svg"
@@ -276,7 +252,7 @@
           <p class="eyebrow eyebrow--centered" data-config="dressCode.eyebrow">Código de vestimenta</p>
           <h2 id="dress-title" data-config="dressCode.title">Formal</h2>
           <p class="section-intro" data-config="dressCode.intro">
-            No importa de qué casa vengas, esta noche todos celebramos juntos.
+            No importa de qué casa vengas, esta tarde todxs celebramos juntxs.
           </p>
 
           <ul class="dress-code__virtues" aria-label="Virtudes de nuestra celebración">
@@ -472,7 +448,7 @@
                 class="photo-card__link"
                 href="/src/assets/gallery/night-xv.svg"
                 data-gallery-item
-                data-gallery-caption="Una noche mágica"
+                data-gallery-caption="Una tarde mágica"
                 data-config-attr="data-gallery-caption:gallery.captions.1"
               >
                 <span class="photo-card__placeholder">
@@ -485,7 +461,7 @@
                     alt="Espacio reservado para una fotografía de la celebración"
                   />
                 </span>
-                <span class="photo-card__caption" data-config="gallery.captions.1">Una noche mágica</span>
+                <span class="photo-card__caption" data-config="gallery.captions.1">Una tarde mágica</span>
               </a>
             </li>
             <li class="photo-card photo-card--square">
@@ -546,7 +522,7 @@
           />
           <p class="eyebrow eyebrow--centered" data-config="rsvp.eyebrow">Reserva la fecha</p>
           <h2 id="rsvp-title" data-config="rsvp.title">Tu presencia completará la historia</h2>
-          <p data-config="rsvp.description">Reserva tu lugar en el Gran Comedor y acompáñanos en esta noche mágica.</p>
+          <p data-config="rsvp.description">Reserva tu lugar en el Gran Comedor y acompáñanos en esta tarde mágica.</p>
           <a
             class="button"
             aria-label="Reservar lugar en el Gran Comedor, abre Google Forms en una pestaña nueva"
@@ -576,7 +552,7 @@
       </section>
     </main>
 
-    <footer class="closing section section--parchment" id="cierre">
+    <footer class="closing section section--parchment" id="cierre" hidden>
       <div class="section__inner closing__inner">
         <p class="eyebrow eyebrow--ink" data-config="closing.eyebrow">El inicio de una nueva historia</p>
         <img
@@ -584,12 +560,12 @@
           src="/src/assets/identity/monogram-circle-vr-xv.svg"
           width="512"
           height="512"
-          alt="Monograma de Valentina Ramírez, XV"
+          alt="Monograma de Valentina Ruiz, XV"
         />
-        <p class="closing__name name-script" data-config="quinceanera.name">Valentina Ramírez</p>
+        <p class="closing__name name-script" data-config="quinceanera.name">Valentina Ruiz</p>
         <p class="closing__xv" data-config="quinceanera.celebration">XV</p>
-        <time datetime="2026-10-18" data-event-date>
-          <span data-config="event.dateParts.short">18 · 10 · 26</span>
+        <time datetime="2026-11-08" data-event-date>
+          <span data-config="event.dateParts.short">09 · 11 · 26</span>
         </time>
         <img
           class="closing__separator"

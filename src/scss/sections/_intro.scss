@@ -165,7 +165,7 @@ body.intro-active {
 .intro__notice {
   max-width: 30rem;
   margin: 0;
-  color: rgb(243 233 214 / 86%);
+  color: var(--vr-parchment);
   font-family: var(--font-body);
   font-size: clamp(0.9rem, 3.5vw, 1.05rem);
   line-height: 1.4;
@@ -185,7 +185,7 @@ body.intro-active {
 }
 
 .intro__hint {
-  color: var(--vr-gold-light);
+  color: var(--vr-parchment);
   font-family: var(--font-accent);
   font-size: 0.7rem;
   letter-spacing: 0.12em;

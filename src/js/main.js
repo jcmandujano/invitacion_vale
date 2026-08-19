@@ -113,10 +113,15 @@ skipLink?.addEventListener("click", () => {
   }
 });
 
-initIntro(eventConfig.intro).catch(() => {
-  root.classList.add("intro-fallback");
+if (eventConfig.features?.skipIntro === true) {
+  root.dataset.introMode = "skipped";
   siteTransition.revealImmediately();
-});
+} else {
+  initIntro(eventConfig.intro).catch(() => {
+    root.classList.add("intro-fallback");
+    siteTransition.revealImmediately();
+  });
+}
 
 root.dataset.appReady = "true";
 
