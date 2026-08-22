@@ -8,6 +8,32 @@
       content="Invitación digital para celebrar los XV años de Valentina Ruiz."
     />
     <meta name="theme-color" content="#0B0B0F" />
+    <style>
+      html.intro-booting,
+      html.intro-booting body {
+        overflow: hidden;
+        background: #0b0b0f;
+      }
+
+      html.intro-booting #main-content,
+      html.intro-booting .closing,
+      html.intro-booting .site-nav {
+        visibility: hidden;
+      }
+
+      html.intro-booting [data-intro] {
+        min-height: 100svh;
+        visibility: visible;
+      }
+    </style>
+    <script>
+      document.documentElement.classList.add("intro-booting");
+      window.setTimeout(() => {
+        if (!document.documentElement.dataset.appReady) {
+          document.documentElement.classList.remove("intro-booting");
+        }
+      }, 4000);
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

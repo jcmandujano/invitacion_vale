@@ -74,6 +74,8 @@ const createSealSparkles = (container, count = 8) => {
 };
 
 export const initIntro = async (introText = {}) => {
+  document.documentElement.classList.remove("intro-booting");
+
   const intro = document.querySelector("[data-intro]");
 
   if (!intro) {

@@ -78,6 +78,7 @@ export const initSiteTransition = () => {
     }
 
     hasRevealedSite = true;
+    root.classList.remove("intro-booting");
     intro.inert = true;
     intro.setAttribute("aria-hidden", "true");
     intro.hidden = true;
