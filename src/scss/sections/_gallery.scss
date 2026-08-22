@@ -3,15 +3,19 @@
 }
 
 .gallery h2 {
-  max-width: 10ch;
+  max-width: min(100%, 18ch);
   margin-top: var(--space-sm);
+  margin-inline: auto;
   color: var(--vr-purple);
   font-style: italic;
+  text-align: center;
 }
 
 .gallery__intro {
   max-width: 34rem;
+  margin-inline: auto;
   margin-top: var(--space-md);
+  text-align: center;
 }
 
 .gallery-grid {

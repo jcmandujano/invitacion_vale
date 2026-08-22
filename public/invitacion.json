@@ -26,7 +26,7 @@
       "short": "8 · 11 · 26"
     },
     "timeLabel": "13:00",
-    "venue": "Jardín Centenario",
+    "venue": "Salón de Fiestas Centenario",
     "address": "Av. Centenario 367 A, Nextengo, Azcapotzalco,",
     "city": "CDMX",
     "mapsUrl": "https://maps.app.goo.gl/HvgwE2QNemvGwyuk6"
@@ -39,7 +39,7 @@
     "loader": "Preparando la correspondencia…",
     "eyebrow": "COLEGIO DE MAGIA Y HECHICERÍA",
     "heading": "Has sido seleccionado",
-    "letterTagline": "Convocatoria al Gran Comedor",
+    "letterTagline": "Baile de Invierno · XV años de Valentina",
     "recipientPrefix": "",
     "message": "Nos complace informarle que su nombre figura entre los invitados convocados al Gran Comedor para el Baile de Invierno con motivo de los XV años de Valentina.",
     "hintReady": "Toca el sello para abrir la carta",
@@ -53,7 +53,7 @@
     "portraitCaption": "Vale Ruiz",
     "storyEyebrow": "XV años",
     "storyTitle": "La celebración",
-    "storyBody": "Por disposición del Colegio, el Gran Comedor abrirá sus puertas el 8 de noviembre para celebrar los XV años de Valentina. Su nombre figura entre lxs invitadxs seleccionados para esta celebración"
+    "storyBody": "El 8 de noviembre celebraremos los XV años de Valentina. El Gran Comedor será el escenario de esta celebración."
   },
   "countdown": {
     "title": "Faltan",
@@ -72,7 +72,7 @@
   },
   "dateCopy": {
     "eyebrow": "Te esperamos",
-    "accessibleTitle": "9 Noviembre 2026, 13:00 hrs"
+    "accessibleTitle": "8 Noviembre 2026, 13:00 hrs"
   },
   "venueCopy": {
     "eyebrow": "El Gran Comedor",
@@ -89,8 +89,8 @@
 },
   "dressCode": {
     "eyebrow": "Código de vestimenta",
-    "title": "Formal",
-    "intro": "No importa a qué casa pertenezcas; esta tarde, todas están invitadas a celebrar juntas.",
+    "title": "Formal festivo",
+    "intro": "Es domingo, sí, pero esta no es una tarde cualquiera. El Colegio solicita sus mejores galas para una celebración digna de un gran salón",
     "virtues": [
       "Valor",
       "Astucia",
@@ -113,8 +113,8 @@
   },
   "gallery": {
     "eyebrow": "Álbum mágico",
-    "title": "Recuerdos de una noche especial",
-    "intro": "Cada gran historia merece ser recordada.",
+    "title": "Momentos que hemos compartido",
+    "intro": "Hemos visto crecer a Vale, acompañándola en tantos momentos, aventuras y recuerdos. Sumemos uno más a esa historia, sus XV años ",
     "captions": [
       "Una noche para recordar",
       "El Gran Comedor",
@@ -124,7 +124,7 @@
   },
   "rsvp": {
     "method": "google-forms",
-    "formUrl": "",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLScI0o3sUjWh_KLuFI9GzawUYj2LXuKym4EasfbUz_DyGUnIFA/viewform?usp=sharing&ouid=100950871498460464358",
     "eyebrow": "CONFIRMACIÓN DE ASISTENCIA",
     "title": "El Gran Comedor espera tu respuesta",
     "description": "Su lugar ha sido reservado para el Baile de Invierno. Confirme su asistencia mediante el correo de lechuzas.",
@@ -132,7 +132,7 @@
     "note": "Se abrirá un formulario de Google para confirmar tu asistencia.",
     "openedButton": "Abrir formulario de nuevo",
     "openedNote": "Completa el formulario para confirmar tu lugar en el Gran Comedor.",
-    "confirmationTitle": "Su respuesta ha sido recibida",
+    "confirmationTitle": "La correspondencia ha sido recibida",
     "confirmationText": "El Colegio ha registrado su confirmación."
   },
   "closing": {
