@@ -48,6 +48,28 @@ if (description && eventConfig.meta?.description) {
   description.content = eventConfig.meta.description;
 }
 
+const setMetaContent = (selector, value) => {
+  if (typeof value !== "string" || value.length === 0) {
+    return;
+  }
+
+  const element = document.querySelector(selector);
+
+  if (element) {
+    element.setAttribute("content", value);
+  }
+};
+
+setMetaContent("[data-meta-og-title]", eventConfig.meta?.title);
+setMetaContent("[data-meta-og-description]", eventConfig.meta?.description);
+setMetaContent("[data-meta-twitter-title]", eventConfig.meta?.title);
+setMetaContent("[data-meta-twitter-description]", eventConfig.meta?.description);
+setMetaContent("[data-meta-og-url]", eventConfig.meta?.shareUrl);
+setMetaContent("[data-meta-og-image]", eventConfig.meta?.image);
+setMetaContent("[data-meta-twitter-image]", eventConfig.meta?.image);
+setMetaContent("[data-meta-og-image-alt]", eventConfig.meta?.imageAlt);
+setMetaContent("[data-meta-twitter-image-alt]", eventConfig.meta?.imageAlt);
+
 for (const element of document.querySelectorAll("[data-event-datetime]")) {
   element.dateTime = eventConfig.event.date;
 }

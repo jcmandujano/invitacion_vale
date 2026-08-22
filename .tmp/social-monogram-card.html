@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Monogram Card</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 1200px;
+        height: 630px;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      body {
+        position: relative;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(circle at 50% 28%, rgb(75 46 131 / 0.26), transparent 34%),
+          radial-gradient(circle at 50% 110%, rgb(75 46 131 / 0.36), transparent 45%),
+          linear-gradient(180deg, #05060b 0%, #0b0b0f 48%, #1a1430 100%);
+        font-family: Georgia, "Times New Roman", serif;
+      }
+
+      body::before,
+      body::after {
+        position: absolute;
+        inset: 0;
+        content: "";
+        pointer-events: none;
+      }
+
+      body::before {
+        background:
+          radial-gradient(1px 1px at 35px 40px, rgb(255 250 240 / 0.9), transparent 2px),
+          radial-gradient(1px 1px at 120px 92px, rgb(230 201 138 / 0.7), transparent 2px),
+          radial-gradient(1px 1px at 220px 55px, rgb(183 154 219 / 0.62), transparent 2px),
+          radial-gradient(1px 1px at 320px 142px, rgb(255 250 240 / 0.84), transparent 2px),
+          radial-gradient(1px 1px at 430px 82px, rgb(230 201 138 / 0.65), transparent 2px),
+          radial-gradient(1px 1px at 560px 36px, rgb(216 210 230 / 0.6), transparent 2px);
+        background-size: 240px 180px, 320px 220px, 420px 260px, 560px 320px, 720px 360px, 880px 420px;
+        opacity: 0.72;
+      }
+
+      body::after {
+        background: linear-gradient(120deg, transparent 26%, rgb(255 255 255 / 0.04) 50%, transparent 74%);
+        opacity: 0.5;
+      }
+
+      .card {
+        position: relative;
+        display: grid;
+        justify-items: center;
+        gap: 1.5rem;
+        padding: 2.5rem 4rem;
+      }
+
+      .card img {
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+        filter:
+          drop-shadow(0 0 18px rgb(183 154 219 / 0.2))
+          drop-shadow(0 0 42px rgb(200 166 107 / 0.14));
+      }
+
+      .title {
+        margin: 0;
+        color: #e6c98a;
+        font-size: 2rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      .subtitle {
+        margin: 0;
+        color: #f3e9d6;
+        font-size: 1.2rem;
+        letter-spacing: 0.06em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="../src/assets/identity/monogram-circle-vr-xv.svg" alt="Monograma VR XV" />
+      <p class="title">Valentina Ruiz Hernández</p>
+      <p class="subtitle">XV años · Baile de Invierno</p>
+    </div>
+  </body>
+</html>
