@@ -39,7 +39,7 @@
     "loader": "Preparando la correspondencia…",
     "eyebrow": "COLEGIO DE MAGIA Y HECHICERÍA",
     "heading": "Has sido seleccionado",
-    "letterTagline": "Baile de Invierno · XV años de Valentina",
+    "letterTagline": "Mis XV años",
     "recipientPrefix": "",
     "message": "Nos complace informarle que su nombre figura entre los invitados convocados al Gran Comedor para el Baile de Invierno con motivo de los XV años de Valentina.",
     "hintReady": "Toca el sello para abrir la carta",
@@ -94,7 +94,7 @@
     "virtues": [
       "Valor",
       "Astucia",
-      "Leal",
+      "Lealtad",
       "Ingenio"
     ],
     "womenLabel": "Damas",
@@ -118,7 +118,7 @@
     "captions": [
       "Una tarde para recordar",
       "El Gran Comedor",
-      "Momentos por descubrir",
+      "XV años",
       "Recuerdos por guardar"
     ]
   },
