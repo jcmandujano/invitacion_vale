@@ -21,14 +21,14 @@
   },
   "event": {
     "title": "Baile de Invierno",
-    "date": "2026-11-08T13:00:00-06:00",
+    "date": "2026-11-08T14:30:00-06:00",
     "dateParts": {
       "day": "8",
       "month": "Noviembre",
       "year": "2026",
       "short": "8 · 11 · 26"
     },
-    "timeLabel": "13:00",
+    "timeLabel": "14:30",
     "venue": "Salón de Fiestas Centenario",
     "address": "Av. Centenario 367 A, Nextengo, Azcapotzalco,",
     "city": "CDMX",
@@ -75,12 +75,12 @@
   },
   "dateCopy": {
     "eyebrow": "Te esperamos",
-    "accessibleTitle": "8 Noviembre 2026, 13:00 hrs"
+    "accessibleTitle": "8 Noviembre 2026, 14:30 hrs"
   },
   "venueCopy": {
     "eyebrow": "El Gran Comedor",
     "title": "Su lugar ha sido reservado",
-    "noteBeforeTime": "Las puertas se abrirán a las 13:00hrs",
+    "noteBeforeTime": "Las puertas se abrirán a las 14:30hrs",
     "noteAfterTime": "Prepárese para una tarde de celebración, magia y buenos recuerdos."
   },
  "giftRegistry": {
@@ -93,7 +93,7 @@
   "dressCode": {
     "eyebrow": "Código de vestimenta",
     "title": "Formal festivo",
-    "intro": "Es domingo, sí, pero esta no es una tarde cualquiera. El Colegio solicita sus mejores galas para una celebración digna de un gran salón",
+    "intro": "El Colegio solicita sus mejores galas para una celebración digna de un gran salón. No olvides llevar tu capa",
     "virtues": [
       "Valor",
       "Astucia",
