@@ -44,7 +44,7 @@
 .rsvp__inner > p:not(.eyebrow, .rsvp__note) {
   max-width: 34rem;
   margin-top: var(--space-lg);
-  color: var(--vr-lavender);
+  color: var(--vr-parchment);
 }
 
 .rsvp .button {
@@ -53,7 +53,7 @@
 
 .rsvp__note {
   margin-top: var(--space-sm);
-  color: rgb(216 210 230 / 62%);
+  color: var(--vr-parchment);
   font-size: 0.85rem;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .rsvp__confirmation > span:not(.rsvp__confirmation-star) {
-  color: var(--vr-lavender);
+  color: var(--vr-parchment);
   font-size: 0.95rem;
 }
 

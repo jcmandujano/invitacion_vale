@@ -45,6 +45,8 @@
 .welcome h1 {
   width: 100%;
   color: var(--vr-purple);
+  font-size: clamp(3.75rem, 19vw, 8.5rem);
+  line-height: 0.9;
 }
 
 .welcome__xv {
@@ -194,7 +196,7 @@
 }
 
 .date-display__year {
-  color: var(--vr-lavender);
+  color: var(--vr-parchment);
   letter-spacing: 0.16em;
 }
 
@@ -206,7 +208,7 @@
 }
 
 .event-date__venue {
-  color: var(--vr-lavender);
+  color: var(--vr-parchment);
 }
 
 .event-date__separator {
@@ -250,7 +252,7 @@
 
 .countdown__item span {
   margin-top: 0.4rem;
-  color: var(--vr-lavender);
+  color: var(--vr-parchment);
   font-family: var(--font-accent);
   font-size: clamp(0.55rem, 2.5vw, 0.75rem);
   letter-spacing: 0.08em;
@@ -259,7 +261,7 @@
 
 .countdown__note {
   margin-top: var(--space-md);
-  color: rgb(216 210 230 / 68%);
+  color: var(--vr-parchment);
   font-size: 0.9rem;
   font-style: italic;
 }
@@ -298,7 +300,7 @@
 
 .venue address {
   margin-top: var(--space-sm);
-  color: var(--vr-lavender);
+  color: var(--vr-parchment);
 }
 
 .venue__note {
@@ -306,11 +308,15 @@
   margin-top: var(--space-lg);
   padding-top: var(--space-md);
   border-top: 1px solid rgb(200 166 107 / 32%);
-  color: rgb(216 210 230 / 78%);
+  color: var(--vr-parchment);
 }
 
 .venue__note span {
-  color: var(--vr-gold-light);
+  color: var(--vr-parchment);
+}
+
+.venue__copy > .button {
+  margin-top: var(--space-xl);
 }
 
 .venue__illustration {
@@ -366,6 +372,10 @@
   min-height: 100svh;
 }
 
+.dress-code .section-intro {
+  max-width: 34rem;
+}
+
 .dress-code__virtues {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -380,7 +390,7 @@
   display: grid;
   justify-items: center;
   gap: 0.65rem;
-  color: var(--vr-lavender);
+  color: var(--vr-parchment);
   text-align: center;
 }
 
@@ -397,87 +407,29 @@
   font-size: 1.6rem;
 }
 
-.dress-code__virtues li:nth-child(2) span {
+.dress-code__virtue--valor span {
+  background: #7a1f2b;
+}
+
+.dress-code__virtue--astucia span {
   background: #18382f;
 }
 
-.dress-code__virtues li:nth-child(3) span {
-  background: #18344b;
-}
-
-.dress-code__virtues li:nth-child(4) span {
+.dress-code__virtue--lealtad span {
   background: #68441d;
 }
 
+.dress-code__virtue--ingenio span {
+  background: #18344b;
+}
+
 .dress-code__virtues strong {
-  color: var(--vr-gold);
+  color: var(--vr-parchment);
   font-family: var(--font-accent);
   font-size: 0.65rem;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-}
-
-.dress-code__cards {
-  display: grid;
-  gap: var(--space-md);
-  width: min(100%, 46rem);
-  margin: var(--space-xl) auto 0;
-}
-
-.dress-card {
-  position: relative;
-  padding: var(--space-lg);
-  border: 1px solid rgb(200 166 107 / 52%);
-  background: rgb(26 20 48 / 72%);
-  text-align: center;
-}
-
-.dress-card::before,
-.dress-card::after {
-  position: absolute;
-  width: 1.25rem;
-  height: 1.25rem;
-  border-color: var(--vr-gold);
-  content: "";
-  opacity: 0.68;
-}
-
-.dress-card::before {
-  top: 0.5rem;
-  left: 0.5rem;
-  border-top: 1px solid;
-  border-left: 1px solid;
-}
-
-.dress-card::after {
-  right: 0.5rem;
-  bottom: 0.5rem;
-  border-right: 1px solid;
-  border-bottom: 1px solid;
-}
-
-.dress-card__symbol {
-  display: block;
-  width: 2.25rem;
-  height: 2.25rem;
-  margin: 0 auto var(--space-sm);
-  border: 1px solid var(--vr-gold);
-  transform: rotate(45deg);
-}
-
-.dress-card:nth-child(2) .dress-card__symbol {
-  border-radius: 50%;
-  transform: none;
-}
-
-.dress-card h3 {
-  color: var(--vr-gold-light);
-}
-
-.dress-card p {
-  margin-top: var(--space-xs);
-  color: var(--vr-lavender);
 }
 
 .closing {
@@ -503,8 +455,8 @@
 .closing__name {
   margin-top: var(--space-md);
   color: var(--vr-purple);
-  font-family: var(--font-display);
   font-size: clamp(3rem, 14vw, 6rem);
+  font-weight: 400;
   line-height: 0.9;
 }
 
@@ -568,9 +520,5 @@
 
   .dress-code__virtues {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .dress-code__cards {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

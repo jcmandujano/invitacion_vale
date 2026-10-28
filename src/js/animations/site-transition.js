@@ -29,7 +29,7 @@ export const initSiteTransition = () => {
     ".envelope__back, .envelope__front, .envelope__flap, [data-recipient], [data-seal-magic]",
   );
   const welcomeContent = welcome?.querySelectorAll(
-    ".welcome__identity > *, .portrait-placeholder, .welcome__story",
+    ".welcome__content > *",
   );
 
   if (
@@ -78,6 +78,7 @@ export const initSiteTransition = () => {
     }
 
     hasRevealedSite = true;
+    root.classList.remove("intro-booting");
     intro.inert = true;
     intro.setAttribute("aria-hidden", "true");
     intro.hidden = true;

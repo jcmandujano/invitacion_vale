@@ -48,9 +48,9 @@ body.intro-active {
   z-index: -2;
   inset: 0;
   background:
-    radial-gradient(circle at 50% 47%, rgb(183 154 219 / 24%), transparent 35%),
-    radial-gradient(circle at 50% 110%, rgb(75 46 131 / 34%), transparent 44%),
-    radial-gradient(circle at 78% 18%, rgb(230 201 138 / 8%), transparent 22%);
+    radial-gradient(circle at 50% 42%, rgb(183 154 219 / 22%), transparent 34%),
+    radial-gradient(circle at 50% 112%, rgb(75 46 131 / 32%), transparent 46%),
+    linear-gradient(180deg, #01030a 0%, transparent 100%);
 }
 
 .night-sky::before {
@@ -68,9 +68,16 @@ body.intro-active {
 .night-sky::after {
   position: absolute;
   inset: 0;
-  background: linear-gradient(115deg, transparent 25%, rgb(255 255 255 / 2%) 50%, transparent 75%);
+  background:
+    radial-gradient(1px 1px at 45px 65px, rgb(255 250 240 / 32%), transparent 2px),
+    radial-gradient(1px 1px at 150px 115px, rgb(230 201 138 / 28%), transparent 2px),
+    radial-gradient(1px 1px at 250px 40px, rgb(183 154 219 / 26%), transparent 2px),
+    radial-gradient(1px 1px at 340px 135px, rgb(255 250 240 / 30%), transparent 2px),
+    linear-gradient(115deg, transparent 25%, rgb(255 255 255 / 3%) 50%, transparent 75%);
+  background-size: 240px 180px, 320px 220px, 420px 260px, 560px 320px, auto;
   content: "";
-  opacity: 0.5;
+  opacity: 0.32;
+  animation: twinkle-starfield 8s ease-in-out infinite alternate;
 }
 
 .magic-particles {
@@ -147,16 +154,45 @@ body.intro-active {
   display: none;
 }
 
-.intro__message {
-  max-width: 24rem;
-  color: var(--vr-lavender);
-  font-family: var(--font-display);
-  font-size: clamp(1.1rem, 5vw, 1.35rem);
-  font-style: italic;
+.intro__institution,
+.intro__hall,
+.intro__ball {
+  color: #b7a27b;
+  font-family: var(--font-accent);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.intro__institution {
+  margin: 0;
+  font-size: clamp(0.7rem, 2.5vw, 0.85rem);
+  letter-spacing: 0.09em;
+}
+
+.intro__notice {
+  max-width: 30rem;
+  margin: 0;
+  color: var(--vr-parchment);
+  font-family: var(--font-body);
+  font-size: clamp(0.9rem, 3.5vw, 1.05rem);
+  line-height: 1.4;
+}
+
+.intro__hall {
+  margin: 0;
+  font-size: clamp(1.55rem, 7vw, 2.65rem);
+  letter-spacing: 0.045em;
+  line-height: 1.05;
+}
+
+.intro__ball {
+  margin: 0.2rem 0 0;
+  font-size: clamp(0.9rem, 4vw, 1.25rem);
+  letter-spacing: 0.08em;
 }
 
 .intro__hint {
-  color: var(--vr-gold-light);
+  color: var(--vr-parchment);
   font-family: var(--font-accent);
   font-size: 0.7rem;
   letter-spacing: 0.12em;
@@ -178,7 +214,13 @@ body.intro-active {
     gap: 0.55rem;
   }
 
-  .intro__message {
-    font-size: 1rem;
+  .intro__notice {
+    font-size: 0.85rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .night-sky::after {
+    animation: none;
   }
 }

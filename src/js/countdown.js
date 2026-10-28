@@ -49,10 +49,10 @@ export const initCountdown = ({ date } = {}, copy = {}) => {
     window.clearTimeout(timerId);
     renderUnits({ days: 0, hours: 0, minutes: 0, seconds: 0 });
     countdown.dataset.countdownState = "complete";
-    countdown.setAttribute("aria-label", "La gran noche ha llegado");
+    countdown.setAttribute("aria-label", "El Colegio ha abierto sus puertas llegado");
 
-    if (title) title.textContent = copy.completeTitle ?? "La gran noche ha llegado";
-    if (note) note.textContent = copy.completeNote ?? "Gracias por ser parte de esta historia.";
+    if (title) title.textContent = copy.completeTitle ?? "El Colegio ha abierto sus puertas llegado";
+    if (note) note.textContent = copy.completeNote ?? "Gracias.";
   };
 
   if (!Number.isFinite(eventTime)) {
@@ -77,7 +77,7 @@ export const initCountdown = ({ date } = {}, copy = {}) => {
       `Faltan ${remaining.days} días, ${remaining.hours} horas, ${remaining.minutes} minutos y ${remaining.seconds} segundos`,
     );
 
-    if (note) note.textContent = copy.activeNote ?? "Cada segundo nos acerca a una noche inolvidable.";
+    if (note) note.textContent = copy.activeNote ?? "Cada segundo nos acerca a una tarde inolvidable.";
 
     const delayToNextSecond = SECOND - (Date.now() % SECOND) + 20;
     timerId = window.setTimeout(update, delayToNextSecond);

@@ -38,8 +38,11 @@ const showConfirmation = (section, confirmation) => {
 };
 
 export const initRsvp = (rsvpConfig = {}) => {
-  const phone = String(rsvpConfig.phone ?? "").replace(/\D/g, "");
-  const isAvailable = rsvpConfig.method === "whatsapp" && phone;
+  const formUrl = rsvpConfig.formUrl;
+  const isAvailable =
+    rsvpConfig.method === "google-forms" &&
+    typeof formUrl === "string" &&
+    /^https:\/\/docs\.google\.com\/forms\//i.test(formUrl);
 
   for (const link of document.querySelectorAll("[data-rsvp-link]")) {
     const section = link.closest("[data-rsvp]") ?? link.closest(".rsvp");
@@ -53,22 +56,22 @@ export const initRsvp = (rsvpConfig = {}) => {
       link.setAttribute("aria-disabled", "true");
       link.classList.add("button--disabled");
 
-      if (note) note.textContent = "La confirmación por WhatsApp estará disponible muy pronto.";
+      if (note) note.textContent = "El formulario de confirmación estará disponible muy pronto.";
       continue;
     }
 
-    link.href = `https://wa.me/${phone}?text=${encodeURIComponent(rsvpConfig.message ?? "")}`;
+    link.href = formUrl;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
 
     link.addEventListener("click", () => {
       if (!section) return;
 
-      link.textContent = rsvpConfig.openedButton ?? "Abrir WhatsApp de nuevo";
+      link.textContent = rsvpConfig.openedButton ?? "Abrir formulario de nuevo";
       if (note) {
         note.textContent =
           rsvpConfig.openedNote ??
-          "Envía el mensaje en WhatsApp para completar tu confirmación.";
+          "Completa el formulario para reservar tu lugar en el Gran Comedor.";
       }
       showConfirmation(section, confirmation);
     });

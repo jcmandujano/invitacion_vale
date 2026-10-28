@@ -52,6 +52,13 @@ h3 {
   line-height: 1.1;
 }
 
+.name-script {
+  font-family: var(--font-script);
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 address {
   font-style: normal;
 }
@@ -78,18 +85,55 @@ main > .section--lavender {
 
 .section--night {
   background:
-    radial-gradient(circle at 12% 22%, rgb(230 201 138 / 70%) 0 1px, transparent 2px),
-    radial-gradient(circle at 80% 18%, rgb(183 154 219 / 55%) 0 1px, transparent 2px),
-    radial-gradient(circle at 72% 72%, rgb(230 201 138 / 45%) 0 1px, transparent 2px),
-    radial-gradient(circle at 50% 30%, rgb(75 46 131 / 25%), transparent 52%),
-    linear-gradient(180deg, var(--vr-black), var(--vr-midnight));
-  background-size: 13rem 15rem, 17rem 19rem, 19rem 23rem, auto, auto;
+    radial-gradient(circle at 50% 30%, rgb(75 46 131 / 22%), transparent 40%),
+    radial-gradient(circle at 50% 110%, rgb(75 46 131 / 30%), transparent 48%),
+    linear-gradient(180deg, #02040a 0%, #070912 42%, var(--vr-midnight) 100%);
 }
 
 .section--midnight {
   background:
-    radial-gradient(circle at 70% 36%, rgb(75 46 131 / 22%), transparent 48%),
-    var(--vr-midnight);
+    radial-gradient(circle at 70% 36%, rgb(75 46 131 / 24%), transparent 40%),
+    linear-gradient(180deg, #090c16 0%, var(--vr-midnight) 100%);
+}
+
+.section--night::before,
+.section--night::after,
+.section--midnight::before,
+.section--midnight::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+}
+
+.section--night::before,
+.section--midnight::before {
+  z-index: -1;
+  background:
+    radial-gradient(1px 1px at 25px 35px, rgb(255 250 240 / 90%), transparent 2px),
+    radial-gradient(1px 1px at 115px 90px, rgb(230 201 138 / 72%), transparent 2px),
+    radial-gradient(1px 1px at 180px 45px, rgb(183 154 219 / 70%), transparent 2px),
+    radial-gradient(1px 1px at 260px 130px, rgb(255 250 240 / 86%), transparent 2px),
+    radial-gradient(1px 1px at 330px 75px, rgb(230 201 138 / 68%), transparent 2px),
+    radial-gradient(1px 1px at 405px 150px, rgb(216 210 230 / 66%), transparent 2px),
+    radial-gradient(1px 1px at 470px 40px, rgb(230 201 138 / 72%), transparent 2px);
+  background-size: 220px 160px, 280px 200px, 340px 220px, 420px 260px, 520px 320px, 620px 360px, 760px 420px;
+  opacity: 0.8;
+  animation: move-starfield 140s linear infinite;
+}
+
+.section--night::after,
+.section--midnight::after {
+  z-index: -1;
+  background:
+    radial-gradient(1px 1px at 45px 65px, rgb(255 250 240 / 28%), transparent 2px),
+    radial-gradient(1px 1px at 150px 115px, rgb(230 201 138 / 24%), transparent 2px),
+    radial-gradient(1px 1px at 250px 40px, rgb(183 154 219 / 24%), transparent 2px),
+    radial-gradient(1px 1px at 340px 135px, rgb(255 250 240 / 26%), transparent 2px),
+    radial-gradient(circle at 50% 0%, rgb(255 255 255 / 10%), transparent 44%);
+  background-size: 240px 180px, 320px 220px, 420px 260px, 560px 320px, auto;
+  opacity: 0.28;
+  animation: twinkle-starfield 8s ease-in-out infinite alternate;
 }
 
 .section--parchment {
@@ -128,7 +172,7 @@ main > .section--lavender {
 .section-intro {
   width: min(100%, 36rem);
   margin: var(--space-md) auto 0;
-  color: var(--vr-lavender);
+  color: var(--vr-parchment);
   text-align: center;
 }
 
@@ -189,6 +233,30 @@ main[tabindex="-1"]:focus,
   color: var(--vr-parchment);
 }
 
+@keyframes move-starfield {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-220px, 0, 0);
+  }
+}
+
+@keyframes twinkle-starfield {
+  from {
+    opacity: 0.16;
+  }
+
+  50% {
+    opacity: 0.36;
+  }
+
+  to {
+    opacity: 0.22;
+  }
+}
+
 @media (min-width: 48rem) {
   .section {
     padding-inline: clamp(2rem, 5vw, 5rem);
@@ -205,5 +273,12 @@ main[tabindex="-1"]:focus,
 @media (prefers-reduced-motion: reduce) {
   html.js {
     scroll-behavior: auto;
+  }
+
+  .section--night::before,
+  .section--night::after,
+  .section--midnight::before,
+  .section--midnight::after {
+    animation: none;
   }
 }

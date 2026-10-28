@@ -3,127 +3,143 @@
   "locale": "es-MX",
   "timeZone": "America/Mexico_City",
   "features": {
-    "navigation": false
+    "navigation": false,
+    "skipIntro": false
   },
   "meta": {
     "title": "XV Valentina Ruiz Hernández",
-    "description": "Invitación digital para celebrar los XV años de Valentina Ruiz Hernández."
+    "description": "Una invitación especial del Colegio de Magia y Hechicería para celebrar los XV años de Valentina Ruiz Hernández.",
+    "shareUrl": "https://convite.net/xv-vale-ruiz/",
+    "image": "https://convite.net/xv-vale-ruiz/social-monogram-vr.png",
+    "imageAlt": "Monograma de Valentina Ruiz Hernández, XV años"
   },
   "quinceanera": {
     "name": "Valentina Ruiz Hernández",
     "firstName": "Valentina",
     "initials": "VR",
-    "celebration": "XV"
+    "celebration": "XV años"
   },
   "event": {
-    "title": "Mis XV años",
-    "date": "2026-10-18T19:00:00-06:00",
+    "title": "Baile de Invierno",
+    "date": "2026-11-08T14:30:00-06:00",
     "dateParts": {
-      "day": "18",
-      "month": "Octubre",
+      "day": "8",
+      "month": "Noviembre",
       "year": "2026",
-      "short": "18 · 10 · 26"
+      "short": "8 · 11 · 26"
     },
-    "timeLabel": "7:00 PM",
-    "venue": "Salón Encantado",
-    "address": "Av. de la Luna 123, Bosque Mágico",
-    "city": "Guadalajara, Jalisco",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Guadalajara%2C%20Jalisco"
-  },
-  "navigation": {
-    "home": "Inicio",
-    "date": "Fecha",
-    "dressCode": "Vestimenta",
-    "map": "Mapa",
-    "gallery": "Galería",
-    "rsvp": "RSVP",
-    "openMenu": "Abrir menú",
-    "closeMenu": "Cerrar menú"
+    "timeLabel": "14:30",
+    "venue": "Salón de Fiestas Centenario",
+    "address": "Av. Centenario 367 A, Nextengo, Azcapotzalco,",
+    "city": "CDMX",
+    "mapsUrl": "https://maps.app.goo.gl/HvgwE2QNemvGwyuk6"
   },
   "interface": {
     "skipIntro": "Saltar la introducción e ir a la invitación",
     "closeImage": "Cerrar imagen ampliada"
   },
   "intro": {
-    "loader": "Preparando la magia…",
-    "eyebrow": "Una invitación especial",
-    "heading": "La invitación ha llegado",
-    "letterTagline": "Una nueva historia está por comenzar",
-    "recipientPrefix": "Srta.",
-    "message": "Una nueva historia está por comenzar.",
-    "hintReady": "Toca el sello para abrir",
-    "hintOpening": "Abriendo la invitación…",
+    "loader": "Preparando la correspondencia…",
+    "eyebrow": "COLEGIO DE MAGIA Y HECHICERÍA",
+    "heading": "Has sido seleccionado",
+    "letterTagline": "Mis XV años",
+    "recipientPrefix": "",
+    "message": "Nos complace informarle que su nombre figura entre los invitados convocados al Gran Comedor para el Baile de Invierno con motivo de los XV años de Valentina.",
+    "hintReady": "Toca el sello para abrir la carta",
+    "hintOpening": "Abriendo la correspondencia…",
     "hintOpened": "La carta ha sido revelada"
   },
   "welcome": {
-    "eyebrow": "Celebramos sus XV años",
-    "tagline": "Una nueva historia está por comenzar.",
+    "eyebrow": "COLEGIO DE MAGIA Y HECHICERÍA",
+    "tagline": "Las puertas del Gran Comedor se abrirán para el Baile de Invierno",
     "portraitStatus": "Retrato pendiente",
-    "portraitCaption": "Una noche para recordar",
-    "storyEyebrow": "Sobre mí",
-    "storyTitle": "El comienzo de una nueva historia",
-    "storyBody": "Valentina está por comenzar una nueva etapa llena de sueños, magia y momentos inolvidables. Acompáñanos a celebrar una noche muy especial en honor a sus XV años."
+    "portraitCaption": "Vale Ruiz",
+    "storyEyebrow": "XV años",
+    "storyTitle": "La celebración",
+    "storyBody": "El 8 de noviembre celebraremos los XV años de Valentina. El Gran Comedor será el escenario de esta celebración."
   },
   "countdown": {
     "title": "Faltan",
-    "units": { "days": "Días", "hours": "Horas", "minutes": "Min", "seconds": "Seg" },
-    "loadingNote": "Preparando la cuenta regresiva…",
-    "activeNote": "Cada segundo nos acerca a una noche inolvidable.",
-    "unavailableTitle": "Muy pronto",
-    "unavailableNote": "La fecha de la celebración está por confirmar.",
-    "completeTitle": "La gran noche ha llegado",
-    "completeNote": "Gracias por ser parte de esta historia."
+    "units": {
+      "days": "Días",
+      "hours": "Horas",
+      "minutes": "Min",
+      "seconds": "Seg"
+    },
+    "loadingNote": "Consultando los registros del Colegio…",
+    "activeNote": "Cada segundo nos acerca al Baile de Invierno.",
+    "unavailableTitle": "Pendiente de confirmación",
+    "unavailableNote": "La fecha de la celebración aún no ha sido registrada.",
+    "completeTitle": "Las puertas del Gran Comedor están abiertas",
+    "completeNote": "Se espera su presencia para el Baile de Invierno."
   },
   "dateCopy": {
-    "eyebrow": "La celebración",
-    "accessibleTitle": "Fecha y hora de la celebración"
+    "eyebrow": "Te esperamos",
+    "accessibleTitle": "8 Noviembre 2026, 14:30 hrs"
   },
   "venueCopy": {
-    "eyebrow": "Nuestro destino",
-    "title": "La celebración tendrá lugar en",
-    "noteBeforeTime": "Las puertas se abrirán a las",
-    "noteAfterTime": "La ruta completa te espera más adelante."
+    "eyebrow": "El Gran Comedor",
+    "title": "Su lugar ha sido reservado",
+    "noteBeforeTime": "Las puertas se abrirán a las 14:30hrs",
+    "noteAfterTime": "Prepárese para una tarde de celebración, magia y buenos recuerdos."
   },
+ "giftRegistry": {
+  "url": "https://www.amazon.com.mx/registries/gl/guest-view/2PS5XXL483ND0?ref_=cm_sw_r_apin_ggr-subnav-share_N0G4N1JXY4NXC4YKQVH5&language=en-US",
+  "eyebrow": "Correo de Lechuzas",
+  "title": "Lista de Regalos",
+  "note": "La correspondencia para Vale queda abierta. Si deseas hacerle llegar un presente, encontrarás la lista en el siguiente enlace",
+  "button": "Ver la Tienda Mágica"
+},
   "dressCode": {
     "eyebrow": "Código de vestimenta",
-    "title": "Formal",
-    "intro": "No importa de qué casa vengas, esta noche todos celebramos juntos.",
-    "virtues": ["Valor", "Astucia", "Sabiduría", "Lealtad"],
+    "title": "Formal festivo",
+    "intro": "El Colegio solicita sus mejores galas para una celebración digna de un gran salón. No olvides llevar tu capa",
+    "virtues": [
+      "Valor",
+      "Astucia",
+      "Lealtad",
+      "Ingenio"
+    ],
     "womenLabel": "Damas",
     "women": "Vestido formal",
     "menLabel": "Caballeros",
     "men": "Traje o vestimenta formal"
   },
   "journey": {
-    "eyebrow": "El viaje comienza",
-    "title": "Todo viaje mágico comienza con un destino."
+    "eyebrow": "EL MAPA DEL MERODEADOR",
+    "title": "Juro solemnemente que el camino comienza aquí."
   },
   "mapCopy": {
-    "eyebrow": "Te guiaremos hasta allí",
-    "title": "Mapa del destino",
+    "eyebrow": "Ubicación",
+    "title": "Siga las huellas para revelar la ubicación",
     "button": "Ver ubicación"
   },
   "gallery": {
     "eyebrow": "Álbum mágico",
-    "title": "Momentos inolvidables",
-    "intro": "Muy pronto este espacio contará nuestra historia en imágenes.",
-    "captions": ["Retrato pendiente", "Una noche mágica", "Momentos por descubrir", "Recuerdos por guardar"]
+    "title": "Momentos que hemos compartido",
+    "intro": "Hemos visto crecer a Vale, acompañándola en tantos momentos, aventuras y recuerdos. Sumemos uno más a esa historia, sus XV años ",
+    "captions": [
+      "Una tarde para recordar",
+      "El Gran Comedor",
+      "XV años",
+      "Recuerdos por guardar"
+    ]
   },
   "rsvp": {
-    "method": "whatsapp",
-    "phone": "5210000000000",
-    "message": "Hola, quiero confirmar mi asistencia a los XV años de Valentina Ruiz Hernández.",
-    "eyebrow": "Reserva la fecha",
-    "title": "Tu presencia completará la historia",
-    "button": "Confirmar por WhatsApp",
-    "note": "Se abrirá WhatsApp con un mensaje listo para enviar.",
-    "openedButton": "Abrir WhatsApp de nuevo",
-    "openedNote": "Envía el mensaje en WhatsApp para completar tu confirmación.",
-    "confirmationTitle": "Tu mensaje está listo",
-    "confirmationText": "Al enviarlo por WhatsApp, tu asistencia quedará confirmada."
+    "method": "google-forms",
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLScI0o3sUjWh_KLuFI9GzawUYj2LXuKym4EasfbUz_DyGUnIFA/viewform?usp=sharing&ouid=100950871498460464358",
+    "eyebrow": "CONFIRMACIÓN DE ASISTENCIA",
+    "title": "El Gran Comedor espera tu respuesta",
+    "description": "Su lugar ha sido reservado para el Baile de Invierno. Confirme su asistencia mediante el correo de lechuzas.",
+    "button": "Enviar mi respuesta",
+    "note": "Se abrirá un formulario de Google para confirmar tu asistencia.",
+    "openedButton": "Abrir formulario de nuevo",
+    "openedNote": "Completa el formulario para confirmar tu lugar en el Gran Comedor.",
+    "confirmationTitle": "La correspondencia ha sido recibida",
+    "confirmationText": "El Colegio ha registrado su confirmación."
   },
   "closing": {
-    "eyebrow": "El inicio de una nueva historia",
-    "phrase": "Que la magia nos encuentre juntos."
+    "eyebrow": "COLEGIO DE MAGIA Y HECHICERÍA",
+    "phrase": "Las puertas del Gran Comedor se abrirán para el Baile de Invierno"
   }
 }

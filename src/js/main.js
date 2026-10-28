@@ -48,6 +48,28 @@ if (description && eventConfig.meta?.description) {
   description.content = eventConfig.meta.description;
 }
 
+const setMetaContent = (selector, value) => {
+  if (typeof value !== "string" || value.length === 0) {
+    return;
+  }
+
+  const element = document.querySelector(selector);
+
+  if (element) {
+    element.setAttribute("content", value);
+  }
+};
+
+setMetaContent("[data-meta-og-title]", eventConfig.meta?.title);
+setMetaContent("[data-meta-og-description]", eventConfig.meta?.description);
+setMetaContent("[data-meta-twitter-title]", eventConfig.meta?.title);
+setMetaContent("[data-meta-twitter-description]", eventConfig.meta?.description);
+setMetaContent("[data-meta-og-url]", eventConfig.meta?.shareUrl);
+setMetaContent("[data-meta-og-image]", eventConfig.meta?.image);
+setMetaContent("[data-meta-twitter-image]", eventConfig.meta?.image);
+setMetaContent("[data-meta-og-image-alt]", eventConfig.meta?.imageAlt);
+setMetaContent("[data-meta-twitter-image-alt]", eventConfig.meta?.imageAlt);
+
 for (const element of document.querySelectorAll("[data-event-datetime]")) {
   element.dateTime = eventConfig.event.date;
 }
@@ -67,6 +89,25 @@ for (const link of document.querySelectorAll("[data-map-link]")) {
   link.removeAttribute("href");
   link.setAttribute("aria-disabled", "true");
   link.classList.add("button--disabled");
+}
+
+for (const link of document.querySelectorAll("[data-gift-registry-link]")) {
+  const note = document.querySelector("[data-gift-registry-note]");
+  const url = eventConfig.giftRegistry?.url;
+
+  if (typeof url === "string" && /^https?:\/\//i.test(url)) {
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    continue;
+  }
+
+  link.setAttribute("aria-disabled", "true");
+  link.classList.add("button--disabled");
+  if (note) {
+    note.hidden = false;
+    note.textContent = "La mesa de regalos estará disponible muy pronto.";
+  }
 }
 
 initScrollReveals();
@@ -94,10 +135,15 @@ skipLink?.addEventListener("click", () => {
   }
 });
 
-initIntro(eventConfig.intro).catch(() => {
-  root.classList.add("intro-fallback");
+if (eventConfig.features?.skipIntro === true) {
+  root.dataset.introMode = "skipped";
   siteTransition.revealImmediately();
-});
+} else {
+  initIntro(eventConfig.intro).catch(() => {
+    root.classList.add("intro-fallback");
+    siteTransition.revealImmediately();
+  });
+}
 
 root.dataset.appReady = "true";
 

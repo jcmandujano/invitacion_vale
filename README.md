@@ -53,7 +53,7 @@ Este archivo permite cambiar, sin tocar JavaScript ni HTML:
 - enlace de Google Maps;
 - código de vestimenta;
 - textos de la galería;
-- teléfono y mensaje de WhatsApp;
+- enlace de mesa de regalos y formulario de confirmación;
 - textos de navegación y RSVP;
 - título y descripción del navegador;
 - visibilidad del menú de navegación.
@@ -79,21 +79,21 @@ Para México central, `-06:00` representa el desfase horario utilizado en el eje
 
 Al cambiar la fecha, hay que actualizar tanto `date` como `dateParts` para que la cuenta regresiva y el texto visible coincidan.
 
-### WhatsApp
+### Enlaces externos
 
-El teléfono debe incluir el código de país y escribirse únicamente con números:
-
-```json
-"phone": "5210000000000"
-```
-
-No deben utilizarse espacios, signos `+`, guiones ni paréntesis.
-
-El mensaje se codifica automáticamente al generar el enlace de WhatsApp:
+Agrega los enlaces finales en `public/invitacion.json`:
 
 ```json
-"message": "Hola, quiero confirmar mi asistencia a los XV años de Valentina."
+"giftRegistry": {
+  "url": "https://..."
+},
+"rsvp": {
+  "method": "google-forms",
+  "formUrl": "https://docs.google.com/forms/..."
+}
 ```
+
+Mientras alguna URL esté vacía, su botón se mostrará deshabilitado.
 
 ### Mostrar u ocultar la navegación
 

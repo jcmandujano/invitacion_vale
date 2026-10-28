@@ -171,13 +171,6 @@ export const initScrollReveals = () => {
       stagger: 0.085,
     });
 
-    createReveal({
-      trigger: ".closing",
-      targets: [".closing__inner > *"],
-      preset: "stagger",
-      stagger: 0.09,
-    });
-
     root.dataset.scrollMotion = "ready";
     window.requestAnimationFrame(() => ScrollTrigger.refresh());
     document.fonts?.ready.then(() => ScrollTrigger.refresh());
