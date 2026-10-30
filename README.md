@@ -1,6 +1,33 @@
 # Invitación digital — XV de Valentina
 
-Invitación web interactiva, mobile-first, con una estética mágica y cinematográfica. Incluye una introducción animada, información del evento, cuenta regresiva, código de vestimenta, mapa, galería, RSVP mediante WhatsApp y navegación opcional.
+Invitación web interactiva, mobile-first, con una estética mágica y cinematográfica. Incluye introducción animada, información del evento, mapa, galería, RSVP y la ceremonia del Sombrero Seleccionador para consultar casa, mesa y lugares.
+
+## Invitación y Sombrero en un solo proyecto
+
+La invitación vive en la raíz y el Sombrero en `sombrero/`. Desde la sección «Descubre tu lugar» se accede a la ceremonia, y desde ella se puede volver a la invitación. Ambos comparten el servidor de desarrollo y el export.
+
+```bash
+npm install
+npm run dev
+```
+
+Abre la dirección que muestra Vite para probar toda la experiencia. Para validar y generar el sitio completo:
+
+```bash
+npm run lint
+npm run test
+npm run typecheck
+npm run build
+npm run preview
+```
+
+El resultado está en `dist/`: sube el **contenido completo** de esta carpeta a la carpeta del evento en el servidor, conservando `sombrero/` y `assets/`. Las rutas son relativas y funcionan también en una subcarpeta del dominio.
+
+Los nombres oficiales se guardan localmente en `sombrero/src/private/guests.json`, que está excluido de Git. El build oficial falla si el archivo no existe; el servidor de desarrollo usa nombres ficticios en su ausencia. Guarda una copia privada del archivo si trabajas desde otra computadora.
+
+El propietario aceptó que la lista de invitados esté incluida en el sitio estático: **cualquier persona que acceda puede descargarla completa**. Esta versión no tiene autenticación ni consulta privada.
+
+Los textos de la nueva sección se editan en `public/invitacion.json`, dentro de `sorting`. La pantalla intermedia del Sombrero se puede activar con `VITE_SHOW_GUEST_CONFIRMATION=true` en `.env.local`.
 
 ## Tecnologías
 
@@ -9,6 +36,7 @@ Invitación web interactiva, mobile-first, con una estética mágica y cinematog
 - JavaScript
 - Vite
 - GSAP
+- React y TypeScript para la experiencia del Sombrero
 - Google Fonts
 
 El resultado de producción es un sitio estático. No necesita PHP, base de datos, Node.js ni procesos activos en el servidor.

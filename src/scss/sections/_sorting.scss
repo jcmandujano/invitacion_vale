@@ -1,0 +1,29 @@
+.sorting__inner {
+  display: grid;
+  justify-items: center;
+  width: min(100%, 42rem);
+  text-align: center;
+}
+
+.sorting__spark {
+  margin-bottom: var(--space-md);
+  color: var(--vr-gold-light);
+  font-size: 2.5rem;
+  line-height: 1;
+  text-shadow: 0 0 1.5rem rgb(230 201 138 / 45%);
+}
+
+.sorting h2 {
+  margin-top: var(--space-md);
+  color: var(--vr-gold-light);
+}
+
+.sorting__description {
+  max-width: 33rem;
+  margin-top: var(--space-lg);
+  color: var(--vr-parchment);
+}
+
+.sorting .button {
+  margin-top: var(--space-lg);
+}

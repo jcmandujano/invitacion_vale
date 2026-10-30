@@ -125,6 +125,12 @@
       "Recuerdos por guardar"
     ]
   },
+  "sorting": {
+    "eyebrow": "El Gran Comedor te espera",
+    "title": "Descubre tu lugar",
+    "description": "El Sombrero Seleccionador conoce el lugar reservado para ti y tu familia. Busca tu nombre y descubre tu casa, mesa y lugares asignados.",
+    "button": "Consultar mi casa y mesa"
+  },
   "rsvp": {
     "method": "google-forms",
     "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLScI0o3sUjWh_KLuFI9GzawUYj2LXuKym4EasfbUz_DyGUnIFA/viewform?usp=sharing&ouid=100950871498460464358",

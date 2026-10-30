@@ -135,7 +135,13 @@ skipLink?.addEventListener("click", () => {
   }
 });
 
-if (eventConfig.features?.skipIntro === true) {
+const returningFromHat = new URLSearchParams(window.location.search).get("desde") === "sombrero";
+
+if (returningFromHat) {
+  root.dataset.introMode = "skipped";
+  siteTransition.revealImmediately();
+  window.requestAnimationFrame(() => document.querySelector("#tu-casa")?.scrollIntoView());
+} else if (eventConfig.features?.skipIntro === true) {
   root.dataset.introMode = "skipped";
   siteTransition.revealImmediately();
 } else {
